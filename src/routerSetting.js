@@ -4,6 +4,10 @@ import HomePage from "./pages/users/homePage/homePage";
 import {Routes, Route} from "react-router-dom";
 import MasterLayout from "./pages/common/masterLayout";
 import Profile from"./pages/users/profile/profile";
+import Store from "./pages/users/store/store";
+import Product from "./pages/users/product/product";
+import Post from "./pages/users/post/post";
+import Contact from "./pages/users/contact/contact";
 
 const renderCompoent = () => {
     const routerPages = [
@@ -12,9 +16,21 @@ const renderCompoent = () => {
         compoent: <HomePage></HomePage>,
        },
        {
-        path: ROUTERS.USER.PROFILE,
-        compoent: <Profile></Profile>,
-       }
+        path: ROUTERS.USER.CUAHANG,
+        compoent: <Store></Store>,
+       },
+       {
+        path: ROUTERS.USER.SANPHAM,
+        compoent: <Product></Product>,
+       },
+       {
+        path: ROUTERS.USER.BAIVIET,
+        compoent: <Post></Post>,
+       },
+       {
+        path: ROUTERS.USER.LIENHE,
+        compoent:<Contact></Contact>,
+       },
     ];
 
    return(
