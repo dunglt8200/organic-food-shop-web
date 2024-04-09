@@ -34,6 +34,28 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    
+}
+.header-bottom-item-center ul li ul li {
+    display: none;
+    white-space: nowrap;
+}
+
+.header-bottom-item-center ul li ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.header-bottom-item-center ul li ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.header-bottom-item-center ul li:hover li {
+    display: block;
 }
 
 .ul-header-item {
@@ -55,6 +77,8 @@
 .ul-header-item-menu {
     display: flex;
     gap: 40px;
+    flex-direction: row;
+    position: relative;
 }
 
 .link-menu {
@@ -65,4 +89,10 @@
 
 .link-menu:hover {
     color: var(--color-click);
+}
+
+.ul-dropdown-list {
+    top: 20px;
+    position: absolute;
+    
 }

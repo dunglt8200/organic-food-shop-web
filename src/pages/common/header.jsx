@@ -21,7 +21,21 @@ function Header() {
         },
         {
             name: "SẢN PHẨM",
-            path: ROUTERS.USER.SANPHAM
+            path: ROUTERS.USER.SANPHAM,
+            child: [
+                {
+                    name: "Rau củ",
+                    path: ""
+                },
+                {
+                    name: "Hoa quả",
+                    path: ""
+                },
+                {
+                    name: "Đóng hộp",
+                    path: ""
+                }
+            ]
         },
         {
             name: "BÀI VIẾT",
@@ -71,7 +85,7 @@ function Header() {
                     </ul>
                 </div>
             </div>
-            <div className="header-bottom">
+            <div className="header-bottom">                
                 <div className="header-bottom-item">
                     <span className="logo">TDL FOOD SHOP</span>
                 </div>
@@ -80,6 +94,15 @@ function Header() {
                        {menus.map((menu, key)=> (
                         <li className="li-header-item" key={key}>
                              <Link className="link-menu" to={menu.path}>{menu.name}</Link>
+                             {menu?.child?.length && (
+                                <ul className="ul-dropdown-list">
+                                    {menu.child.map((child, keyChild) => (
+                                        <li className="li-header-item" key={keyChild}>
+                                            <Link className="link-menu" to={child.path}>{child.name}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                             )}
                         </li>
                        ))}
                     </ul>
