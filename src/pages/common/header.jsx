@@ -87,7 +87,7 @@ function Header() {
             </div>
             <div className="header-bottom">                
                 <div className="header-bottom-item">
-                    <span className="logo">TDL FOOD SHOP</span>
+                    <span className="logo">TDL ORGANIC FOOD</span>
                 </div>
                 <div className="header-bottom-item-center">
                     <ul className="ul-header-item-menu">

@@ -56,6 +56,7 @@
 
 .header-bottom-item-center ul li:hover li {
     display: block;
+    background-color: var(--color-click);
 }
 
 .ul-header-item {
@@ -92,7 +93,60 @@
 }
 
 .ul-dropdown-list {
-    top: 20px;
-    position: absolute;
-    
+    top: 15px;
+    position: absolute;  
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div-footer {
+    height: auto;
+    width: 17.5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.li-footer-item {
+    list-style-type: none;
+    font-size: large;
+}
+
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.style-text {
+    font-weight: bold;
+}
+
+.size-text-30 {
+    font-size: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-main);
+}
+
+.input {
+    height: 35px; /* Set the height to 30 pixels */
+    width: 200px;
+    border: #f0f0f0;
+    text-align: center;
+}
+
+.button {
+    height: 35px; /* Set the height to 30 pixels */
+    width: 100px;
+    background-color: var(--color-click);
+    color: white;
+    border: 0;
+    outline: none;
 }
