@@ -8,6 +8,8 @@ import { RiMailSendLine } from "react-icons/ri";
 import { BsCart } from "react-icons/bs";
 import { ROUTERS } from "../../utils/router";
 import { Link } from 'react-router-dom';
+import { FiAlignJustify } from "react-icons/fi";
+import { BsTelephone } from "react-icons/bs";
 
 function Header() {
     const[menus, setMenu] = useState([
@@ -47,8 +49,14 @@ function Header() {
         }
     ])
 
+    const [isShowDropDown, setIsShowDropDown] = useState(false)
+    const handleButtonDropDownList = () => {
+        setIsShowDropDown(!isShowDropDown)
+    }
+
     return(
         <div>
+            {/* header top */}
             <div className="header-top">
                 <div className="header-item justify-content-left">
                     <ul className="ul-header-item">
@@ -64,6 +72,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
+                {/* icon social network */}
                 <div className="header-item justify-content-right">
                     <ul className="ul-header-item">
                         <li className="li-header-item">
@@ -85,6 +94,7 @@ function Header() {
                     </ul>
                 </div>
             </div>
+            {/* header bottom */}
             <div className="header-bottom">                
                 <div className="header-bottom-item">
                     <span className="logo">TDL ORGANIC FOOD</span>
@@ -107,6 +117,7 @@ function Header() {
                        ))}
                     </ul>
                 </div>
+                {/* cart */}
                 <div className="header-bottom-item justify-content-right">
                     <ul className="ul-header-item">
                         <li className="li-header-item">
@@ -117,6 +128,53 @@ function Header() {
                         </li>
                     </ul>
                 </div>
+            </div>
+            {/* dropdown menu */}
+            <div className="header-menu-banner">
+                <div className="header-menu">
+                    <button className="button-menu" onClick={handleButtonDropDownList}>
+                        <FiAlignJustify />
+                        Danh sách sản phẩm
+                    </button>
+                    {isShowDropDown && (
+                        <ul className="ul-dropdown-menu">
+                            <li className="li-footer-item">
+                                <Link className="link-dropdown-menu" to="">Thịt tươi</Link>
+                            </li>
+                            <li className="li-footer-item">
+                                <Link className="link-dropdown-menu" to="">Rau củ</Link>                     
+                            </li>
+                            <li className="li-footer-item">
+                                <Link className="link-dropdown-menu" to="">Nước trái cây</Link>
+                            </li>
+                            <li className="li-footer-item">
+                                <Link className="link-dropdown-menu" to="">Trái cây</Link>
+                            </li>
+                            <li className="li-footer-item">
+                                <Link className="link-dropdown-menu" to="">Hải sản</Link>
+                            </li>
+                        </ul>
+                    )} 
+                </div>
+                {/* header-banner */}
+                <div className="header-banner">
+                    <div className="header-search">
+                        <div className="div-search">
+                            <input className="input-search" type="text" placeholder="Bạn đang muốn tìm gì ?"/>
+                            <button className="btn-search">Tìm kiếm</button>                          
+                        </div>
+                        <div className="div-phone">
+                            <div className="phone">
+                            <BsTelephone color="#3f6150"/>
+                            </div>
+                            <div className="div-hotro">
+                                <span className="style-text">039.567.2456</span>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
+                        </div>  
+                    </div>             
+                    <div className="img-banner"></div>
+                </div>                          
             </div>
         </div>
     )

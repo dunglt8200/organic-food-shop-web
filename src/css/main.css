@@ -10,7 +10,7 @@
 }
 .header-bottom {
     width: 100%;
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
 }
@@ -51,12 +51,13 @@
 }
 
 .header-bottom-item-center ul li ul li a:hover {
-    background-color: #f0f0f0;
+    background-color: var(--color-click);
+    color: white;
 }
 
 .header-bottom-item-center ul li:hover li {
     display: block;
-    background-color: var(--color-click);
+    background-color: var(--color-main);
 }
 
 .ul-header-item {
@@ -141,12 +142,130 @@
     border: #f0f0f0;
     text-align: center;
 }
-
 .button {
     height: 35px; /* Set the height to 30 pixels */
     width: 100px;
     background-color: var(--color-click);
     color: white;
     border: 0;
+    outline: none;
+}
+
+.header-menu-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 25px;
+}
+
+.header-menu {
+    height: fit-content;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #a1a1a1;
+}
+
+.header-banner {
+    height: auto;
+    width: 55%;
+}
+
+.button-menu {
+    height: 35px;
+    width: 100%;
+    font-size: medium;
+    background-color: var(--color-click);
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+}
+
+.ul-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.link-dropdown-menu {
+    text-decoration: none;
+    color: black;
+}
+
+.header-search{
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    width: 100%;
+    height: 40px;
+}
+
+.img-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(../static/img/rau-cu-qua-9679-1614753495.jpg);
+    background-size: contain;
+}
+
+.div-search {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-search {
+    width: 80%;
+    height: 88%;
+    font-size: medium;
+    padding-left: 15px;
+    border: 1px solid var(--color-main);
+}
+
+.btn-search {
+    width: 15%;
+    height: 90%;
+    background-color: var(--color-click);
+    border: none;
+    color: white;
+}
+
+.header-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.div-hotro {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    justify-content: center;
+}
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-main);
+    border-radius: 50%;
+    width: 40px;
+}
+.input,.input-search:focus {
     outline: none;
 }
