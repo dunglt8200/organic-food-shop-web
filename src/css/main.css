@@ -33,31 +33,7 @@
     width: 30%;
     height: 100%;
     display: flex;
-    align-items: center;
-
-    
-}
-.header-bottom-item-center ul li ul li {
-    display: none;
-    white-space: nowrap;
-}
-
-.header-bottom-item-center ul li ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-    transition: background-color 0.3s;
-}
-
-.header-bottom-item-center ul li ul li a:hover {
-    background-color: var(--color-click);
-    color: white;
-}
-
-.header-bottom-item-center ul li:hover li {
-    display: block;
-    background-color: var(--color-main);
+    align-items: center; 
 }
 
 .ul-header-item {
@@ -69,6 +45,13 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
+    height: 30px;
+    align-items: center;
+}
+
+.li-dropdown:hover {
+    color: white;
+    background-color:var(--color-main);
 }
 
 .logo {
@@ -94,8 +77,19 @@
 }
 
 .ul-dropdown-list {
-    top: 15px;
-    position: absolute;  
+    top: 25px;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 28%;
+    display: none;
+    transition: background-color 0.3s;
+    border: 1px solid var(--color-click);
+}
+
+.ul-header-item-menu li:hover .ul-dropdown-list {
+    display: flex;
 }
 
 .footer {
@@ -137,13 +131,13 @@
 }
 
 .input {
-    height: 35px; /* Set the height to 30 pixels */
+    height: 35px;
     width: 200px;
     border: #f0f0f0;
     text-align: center;
 }
 .button {
-    height: 35px; /* Set the height to 30 pixels */
+    height: 35px;
     width: 100px;
     background-color: var(--color-click);
     color: white;
@@ -266,6 +260,7 @@
     border-radius: 50%;
     width: 40px;
 }
+
 .input,.input-search:focus {
     outline: none;
 }

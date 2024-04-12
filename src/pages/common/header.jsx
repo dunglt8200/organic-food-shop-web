@@ -107,7 +107,7 @@ function Header() {
                              {menu?.child?.length && (
                                 <ul className="ul-dropdown-list">
                                     {menu.child.map((child, keyChild) => (
-                                        <li className="li-header-item" key={keyChild}>
+                                        <li className="li-header-item li-dropdown" key={keyChild}>
                                             <Link className="link-menu" to={child.path}>{child.name}</Link>
                                         </li>
                                     ))}
