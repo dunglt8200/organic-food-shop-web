@@ -173,7 +173,17 @@ function Header() {
                             </div>
                         </div>  
                     </div>             
-                    <div className="img-banner"></div>
+                    <div className="img-banner">
+                        <div className="div-banner">
+                            <span className="sp-1">TRÁI CÂY TƯƠI</span>
+                            <br />
+                            <span className="sp-2">RAU QUẢ <br /> SẠCH 100%</span>
+                            <br />
+                            <span>Miễn phí giao hàng tận nơi</span>
+                            <br />
+                            <Link className="link-buy" to="">MUA NGAY</Link>
+                        </div>
+                    </div>
                 </div>                          
             </div>
         </div>
