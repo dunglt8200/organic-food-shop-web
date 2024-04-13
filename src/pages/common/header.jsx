@@ -49,7 +49,7 @@ function Header() {
         }
     ])
 
-    const [isShowDropDown, setIsShowDropDown] = useState(false)
+    const [isShowDropDown, setIsShowDropDown] = useState(true)
     const handleButtonDropDownList = () => {
         setIsShowDropDown(!isShowDropDown)
     }
