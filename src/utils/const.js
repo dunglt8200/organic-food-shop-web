@@ -78,4 +78,41 @@ export const Menus = [
         name: "LIÊN HỆ",
         path: ROUTERS.USER.LIENHE
     }
+];
+
+export const TitleTabs = [
+    {
+        id: 0,
+        name: "Tất cả"     
+    },
+    {
+        id: 1,
+        name: "Thit tươi"     
+    },
+    {
+        id: 2,
+        name: "Trái cây"     
+    },
+    {
+        id: 3,
+        name: "Thức ăn nhanh"   
+    }
+];
+
+export const ProductTabs = [
+    {
+        name: "Thịt bò",
+        price: 1,
+        id_title: 1
+    },
+    {
+        name: "Chuối",
+        price: 1,
+        id_title: 2
+    },
+    {
+        name: "Khoai tây chiên",
+        price: 1,
+        id_title: 3
+    }
 ]

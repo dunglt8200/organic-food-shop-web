@@ -4,7 +4,7 @@ import "./style.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Product from "./product";
-import { SanPhamSlides } from "../../../utils/const";
+import { SanPhamSlides, TitleTabs, ProductTabs } from "../../../utils/const";
 
 function HomePage() {
     return (
@@ -17,7 +17,7 @@ function HomePage() {
                         <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
                             {sp.name}
                         </div>
-                    </Carousel.Item>   
+                    </Carousel.Item>
                     ))}                           
                 </Carousel>
             </div>
@@ -32,19 +32,21 @@ function HomePage() {
                 <div>
                 <Tabs>
                     <TabList>
-                        <Tab>Toàn bộ</Tab>
-                        <Tab>Thit tươi</Tab>
-                        <Tab>Trái cây</Tab>
-                        <Tab>Thức ăn nhanh</Tab>
+                        {TitleTabs.map((title, key_title) => (
+                            <Tab key={key_title}>{title.name}</Tab>
+                        ))}
                     </TabList>
-
-                    <TabPanel>
-                    <h2>Any content 1</h2>
-                    <Product url="" name="a" price="1"></Product>
+                    
+                    {TitleTabs.map((title2, key_title2) => (
+                        <TabPanel>
+                        {                           
+                            ProductTabs.map((product, product_key)=> (
+                                title2.id === product.id_title && (
+                                    <Product url="" name={product.name} price={product.price}></Product>
+                                )
+                        ))}
                     </TabPanel>
-                    <TabPanel>
-                    <h2>Any content 2</h2>
-                    </TabPanel>
+                    ))}
                 </Tabs>
                 </div>
             </div>
