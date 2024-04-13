@@ -1,57 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from 'react-grid-carousel';
 import "./style.css";
-import CamTuoi from "../../../static/slide/img/cam-sanh.jpg";
-import RauCai from "../../../static/slide/img/rau-cai.jpg";
-import CaRot from "../../../static/slide/img/ca-rot.jpg";
-import Sua from "../../../static/slide/img/sua.jpg";
-import HatKho from "../../../static/slide/img/hat-kho.jpg";
-import CaChua from "../../../static/slide/img/Ca_chua.jpg";
-import NuocEp from "../../../static/slide/img/nuoc-ep.jpg";
-import KhoaiTay from "../../../static/slide/img/khoai-tay.jpg";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import Product from "./product";
+import { SanPhamSlides } from "../../../utils/const";
 
 function HomePage() {
-    const [products, setproducts] = useState([
-        {
-            name: "CAM TƯƠI",
-            url: CamTuoi,
-        },
-        {
-            name: "RAU CẢI",
-            url: RauCai,
-        },
-        {
-            name: "CÀ RỐT",
-            url: CaRot,
-        },
-        {
-            name: "SỮA",
-            url: Sua,
-        },
-        {
-            name: "HẠT KHÔ",
-            url: HatKho,
-        },
-        {
-            name: "CÀ CHUA",
-            url: CaChua,
-        },
-        {
-            name: "NƯỚC ÉP",
-            url: NuocEp,
-        },
-        {
-            name: "KHOAI TÂY",
-            url: KhoaiTay,
-        }
-    ])
-
     return (
        <div className="main">
             {/* slide */}
             <div className="div-slide">
                 <Carousel cols={4} rows={1} gap={10} loop>
-                    {products.map((sp, key_sp) => (
+                    {SanPhamSlides.map((sp, key_sp) => (
                         <Carousel.Item>
                         <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
                             {sp.name}
@@ -59,6 +20,33 @@ function HomePage() {
                     </Carousel.Item>   
                     ))}                           
                 </Carousel>
+            </div>
+            {/* sản phẩm nổi bật*/}
+            <div className="div-sp-hot">
+                {/* title */}
+                <div className="title-sp-hot">
+                    <span>Sản Phẩm Nổi Bật</span>
+                    <div className="div-space"></div>
+                </div>
+                {/* tab */}
+                <div>
+                <Tabs>
+                    <TabList>
+                        <Tab>Toàn bộ</Tab>
+                        <Tab>Thit tươi</Tab>
+                        <Tab>Trái cây</Tab>
+                        <Tab>Thức ăn nhanh</Tab>
+                    </TabList>
+
+                    <TabPanel>
+                    <h2>Any content 1</h2>
+                    <Product url="" name="a" price="1"></Product>
+                    </TabPanel>
+                    <TabPanel>
+                    <h2>Any content 2</h2>
+                    </TabPanel>
+                </Tabs>
+                </div>
             </div>
        </div>
     )

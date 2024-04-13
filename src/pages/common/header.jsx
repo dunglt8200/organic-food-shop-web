@@ -6,49 +6,12 @@ import { IoLogoTwitter } from "react-icons/io";
 import { convertIntToVND } from "../../utils/util";
 import { RiMailSendLine } from "react-icons/ri";
 import { BsCart } from "react-icons/bs";
-import { ROUTERS } from "../../utils/router";
 import { Link } from 'react-router-dom';
 import { FiAlignJustify } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
-
+import "../../utils/const";
+import { Menus } from "../../utils/const";
 function Header() {
-    const[menus, setMenu] = useState([
-        {
-            name: "TRANG CHỦ",
-            path: ROUTERS.USER.HOME
-        },
-        {
-            name: "CỬA HÀNG",
-            path: ROUTERS.USER.CUAHANG
-        },
-        {
-            name: "SẢN PHẨM",
-            path: ROUTERS.USER.SANPHAM,
-            child: [
-                {
-                    name: "Rau củ",
-                    path: ""
-                },
-                {
-                    name: "Hoa quả",
-                    path: ""
-                },
-                {
-                    name: "Đóng hộp",
-                    path: ""
-                }
-            ]
-        },
-        {
-            name: "BÀI VIẾT",
-            path: ROUTERS.USER.BAIVIET
-        },
-        {
-            name: "LIÊN HỆ",
-            path: ROUTERS.USER.LIENHE
-        }
-    ])
-
     const [isShowDropDown, setIsShowDropDown] = useState(true)
     const handleButtonDropDownList = () => {
         setIsShowDropDown(!isShowDropDown)
@@ -101,7 +64,7 @@ function Header() {
                 </div>
                 <div className="header-bottom-item-center">
                     <ul className="ul-header-item-menu">
-                       {menus.map((menu, key)=> (
+                       {Menus.map((menu, key)=> (
                         <li className="li-header-item" key={key}>
                              <Link className="link-menu" to={menu.path}>{menu.name}</Link>
                              {menu?.child?.length && (
