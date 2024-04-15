@@ -100,7 +100,7 @@
 
 .div-footer {
     height: auto;
-    width: 17.5%;
+    width: 16%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -128,6 +128,7 @@
     width: 100%;
     height: auto;
     background-color: var(--color-main);
+    gap: 55px;
 }
 
 .input {
