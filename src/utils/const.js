@@ -6,6 +6,11 @@ import HatKho from "../static/slide/img/hat-kho.jpg";
 import CaChua from "../static/slide/img/Ca_chua.jpg";
 import NuocEp from "../static/slide/img/nuoc-ep.jpg";
 import KhoaiTay from "../static/slide/img/khoai-tay.jpg";
+import ThitBo from "../static/tab/img/thit-bo.jpg";
+import ThitGa from "../static/tab/img/thit-ga.jpg";
+import ChuoiXanh from "../static/tab/img/chuoi.jpg";
+import Man from "../static/tab/img/man.jpg";
+import KhoaiTayChien from "../static/tab/img/khoai-tay-chien12212.jpg";
 import { ROUTERS } from "./router";
 
 export const SanPhamSlides = [
@@ -102,17 +107,32 @@ export const TitleTabs = [
 export const ProductTabs = [
     {
         name: "Thịt bò",
-        price: 1,
-        id_title: 1
+        price: 125000,
+        id_title: 1,
+        url: ThitBo
     },
     {
-        name: "Chuối",
-        price: 1,
-        id_title: 2
+        name: "Thịt gà",
+        price: 75000,
+        id_title: 1,
+        url: ThitGa
+    },
+    {
+        name: "Chuối xanh",
+        price: 30000,
+        id_title: 2,
+        url: ChuoiXanh
+    },
+    {
+        name: "Mận an phước",
+        price: 22000,
+        id_title: 2,
+        url: Man
     },
     {
         name: "Khoai tây chiên",
-        price: 1,
-        id_title: 3
+        price: 40000,
+        id_title: 3,
+        url: KhoaiTayChien
     }
 ]

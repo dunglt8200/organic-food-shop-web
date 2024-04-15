@@ -1,11 +1,12 @@
 import React from "react";
+import {convertIntToVND} from "../../../utils/util";
 
 function Product(prop) {
     return (
         <div className="div-product">
-            <img src={prop.url} alt="img" />
+            <img className="img-product" src={prop.url} alt="img"/>
             <span>{prop.name}</span>
-            <span>{prop.price}</span>
+            <span className="style-text">{convertIntToVND(prop.price)}</span>
         </div>
     )
 }

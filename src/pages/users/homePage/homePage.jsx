@@ -30,24 +30,26 @@ function HomePage() {
                 </div>
                 {/* tab */}
                 <div>
-                <Tabs>
-                    <TabList>
-                        {TitleTabs.map((title, key_title) => (
-                            <Tab key={key_title}>{title.name}</Tab>
+                    <Tabs>
+                        <TabList>
+                            {TitleTabs.map((title, key_title) => (
+                                <Tab key={key_title}>{title.name}</Tab>
+                            ))}
+                        </TabList>
+                        
+                        <div>
+                        {TitleTabs.map((title2, key_title2) => (
+                            <TabPanel key={key_title2}>
+                            {                           
+                                ProductTabs.map((product, product_key)=> (
+                                    (title2.id === 0 || title2.id === product.id_title) && (
+                                        <Product url={product.url} name={product.name} price={product.price}></Product>
+                                    )
+                            ))}
+                        </TabPanel>
                         ))}
-                    </TabList>
-                    
-                    {TitleTabs.map((title2, key_title2) => (
-                        <TabPanel>
-                        {                           
-                            ProductTabs.map((product, product_key)=> (
-                                title2.id === product.id_title && (
-                                    <Product url="" name={product.name} price={product.price}></Product>
-                                )
-                        ))}
-                    </TabPanel>
-                    ))}
-                </Tabs>
+                        </div>               
+                    </Tabs>
                 </div>
             </div>
        </div>
