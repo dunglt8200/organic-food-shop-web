@@ -11,6 +11,8 @@ import ThitGa from "../static/tab/img/thit-ga.jpg";
 import ChuoiXanh from "../static/tab/img/chuoi.jpg";
 import Man from "../static/tab/img/man.jpg";
 import KhoaiTayChien from "../static/tab/img/khoai-tay-chien12212.jpg";
+import TaoXanh from "../static/tab/img/tao_xanh.jpg";
+import NhoTim from "../static/tab/img/Nho.jpg";
 import { ROUTERS } from "./router";
 
 export const SanPhamSlides = [
@@ -128,6 +130,18 @@ export const ProductTabs = [
         price: 22000,
         id_title: 2,
         url: Man
+    },
+    {
+        name: "Táo xanh",
+        price: 80000,
+        id_title: 2,
+        url: TaoXanh
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
     },
     {
         name: "Khoai tây chiên",
