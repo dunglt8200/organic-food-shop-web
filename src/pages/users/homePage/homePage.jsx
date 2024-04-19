@@ -4,7 +4,8 @@ import "./style.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Product from "./product";
-import { SanPhamSlides, TitleTabs, ProductTabs } from "../../../utils/const";
+import { SanPhamSlides, TitleTabs, ProductTabs, Posts } from "../../../utils/const";
+import Post from "./post";
 
 function HomePage() {
     return (
@@ -50,6 +51,18 @@ function HomePage() {
                         ))}
                         </div>               
                     </Tabs>
+                </div>
+            </div>
+            {/* Bài viết */}
+            <div className="div-post">
+                <div className="title-sp-hot">
+                    <span>Bài viết</span>
+                    <div className="div-space"></div>
+                </div>
+                <div className="post">
+                    {Posts.map((post, key_post) => (
+                        <Post url={post.url} title={post.title} content={post.content}></Post>
+                    ))}
                 </div>
             </div>
        </div>

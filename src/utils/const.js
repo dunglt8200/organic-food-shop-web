@@ -13,6 +13,8 @@ import Man from "../static/tab/img/man.jpg";
 import KhoaiTayChien from "../static/tab/img/khoai-tay-chien12212.jpg";
 import TaoXanh from "../static/tab/img/tao_xanh.jpg";
 import NhoTim from "../static/tab/img/Nho.jpg";
+import Post1 from "../static/post/hv-gioi-thieu-1-1024x768.jpg";
+import Post2 from "../static/post/hv-gioi-thieu-2-1024x768.jpg";
 import { ROUTERS } from "./router";
 
 export const SanPhamSlides = [
@@ -148,5 +150,18 @@ export const ProductTabs = [
         price: 40000,
         id_title: 3,
         url: KhoaiTayChien
+    }
+];
+
+export const Posts = [
+    {
+        url: Post1,
+        title: "Thế nào là thực phẩm sạch?",
+        content: "Theo các chuyên gia, thực phẩm sạch là thực phẩm trong quá trình nuôi trồng vẫn sử dụng chất hóa học như thuốc trừ sâu, hóa chất tổng hợp... Tuy nhiên, các hoá chất này đều được xử lý theo quy trình để đảm bảo thực phẩm khi thu hoạch chỉ còn dư lượng chất độc hại dưới mức cho phép, không ảnh hưởng tiêu cực cho sức khoẻ người dùng."
+    },
+    {
+        url: Post2,
+        title: "Và thực phẩm hữu cơ (organic) là gì?",
+        content: "Theo quy định, các sản phẩm đạt tiêu chuẩn Organic sẽ được gắn nhãn “Certified Organic Foods” như sữa bột công thức Organic, bột dinh dưỡng cho bé Organic, thịt, trứng, rau và trái cây Organic. Chứng nhận này được gắn trên các sản phẩm không chứa hormone, không chứa thuốc trừ cỏ hay phân bón hóa học, không bị biến đổi gen, không bị chiếu xạ tiệt trùng, không có hương liệu, phẩm màu và chất bảo quản. Tất cả các thực phẩm Organic đều chịu sự kiểm soát liên tục, gắt gao từ khâu đầu đến khâu cuối cùng bởi các tổ chức có thẩm quyền và uy tín về lĩnh vực này."
     }
 ]

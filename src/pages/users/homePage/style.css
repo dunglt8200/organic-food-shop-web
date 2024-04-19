@@ -4,7 +4,7 @@
     padding: 1% 13%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 .div-sp-item {
@@ -72,7 +72,7 @@
 
 .react-tabs__tab-panel {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-main);
     border-radius: 5px;
     margin-top: 10px;
     transition: opacity 0.3s ease;
@@ -144,4 +144,56 @@
     display: flex;
     justify-content: center;
     height: 13%;
+}
+
+.div-post {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.div-post-item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 20px;
+    background-color: var(--color-main);
+}
+
+.div-content-post {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    gap: 25px;
+    width: 50%;
+    padding: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid var(--color-main);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.div-img-post-item {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-post-item {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.div-img-post-item:hover .img-post-item {
+    transform: scale(1.1);
 }
