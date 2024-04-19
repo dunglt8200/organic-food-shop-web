@@ -15,7 +15,7 @@ function HomePage() {
                     {SanPhamSlides.map((sp, key_sp) => (
                         <Carousel.Item>
                         <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
-                            {sp.name}
+                            <span className="sp-name-sp">{sp.name}</span>
                         </div>
                     </Carousel.Item>
                     ))}                           
