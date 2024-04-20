@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 function MasterLayout({children, ...props}) {
     return(
-        <div { ...props}>
+        <div className="div-master-layout" { ...props}>
             <Header></Header>
             {children}
             <Footer></Footer>

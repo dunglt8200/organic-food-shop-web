@@ -300,3 +300,9 @@
     font-weight: bold;
     letter-spacing: 3px;
 }
+
+.div-master-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
