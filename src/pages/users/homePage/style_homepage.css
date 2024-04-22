@@ -21,6 +21,8 @@
 
 .div-sp-item:hover{
     transform: scale(0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .div-space {
@@ -111,14 +113,17 @@
 
 .div-icon:hover{
     transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .div-product:hover .div-icon {
     display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .div-product:hover .img-product {
     transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .div-product:hover .div-eye-cart {

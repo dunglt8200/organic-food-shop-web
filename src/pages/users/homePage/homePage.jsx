@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from 'react-grid-carousel';
-import "./style.css";
+import "./style_homepage.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Product from "./product";

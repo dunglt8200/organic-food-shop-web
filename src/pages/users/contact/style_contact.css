@@ -115,4 +115,5 @@
     background-color: var(--color-click);
     color: var(--color-main);
     outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 };

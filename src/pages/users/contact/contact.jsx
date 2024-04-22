@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style_contact.css";
 import { SlLocationPin } from "react-icons/sl";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlinePhoneIphone } from "react-icons/md";
