@@ -3,9 +3,9 @@ import Carousel from 'react-grid-carousel';
 import "./style_homepage.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Product from "./product";
+import Product from "../../common/product";
 import { SanPhamSlides, TitleTabs, ProductTabs, Posts } from "../../../utils/const";
-import Post from "./post";
+import Post from "../../common/post";
 
 function HomePage() {
     return (

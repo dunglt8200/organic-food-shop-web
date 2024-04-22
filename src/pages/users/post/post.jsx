@@ -1,7 +1,7 @@
 import React from "react";
 import "./style_post.css";
 import { Posts } from "../../../utils/const";
-import PostItem from "../homePage/post";
+import PostItem from "../../common/post";
 import { shortenText } from "../../../utils/util";
 
 function Post() {

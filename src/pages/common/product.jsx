@@ -1,5 +1,5 @@
 import React from "react";
-import {convertIntToVND} from "../../../utils/util";
+import {convertIntToVND} from "../../utils/util";
 import { IoEyeOutline } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
 
