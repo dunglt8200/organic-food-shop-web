@@ -31,7 +31,7 @@ function Contact() {
                         <span style={{fontSize: 22, fontWeight: "bold"}}>Hãy gửi cho chúng tôi</span>
                         <input className="input-text" type="text" placeholder="Họ và tên" style={{height:40}}/>
                         <input className="input-text" type="text" placeholder="Email" style={{height:40}}/>
-                        <textarea className="textarea-noi-dung" placeholder="Nội dung"></textarea>
+                        <textarea placeholder="Nội dung"></textarea>
                         <button className="btn-send-lien-he">Gửi liên hệ</button></div>    
 
                     </div>
