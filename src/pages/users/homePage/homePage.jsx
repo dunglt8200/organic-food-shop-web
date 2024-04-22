@@ -60,7 +60,7 @@ function HomePage() {
                     <div className="div-space"></div>
                 </div>
                 <div className="post">
-                    {Posts.map((post, key_post) => (
+                    {Posts.slice(0, 2).map((post, key_post) => (
                         <Post url={post.url} title={post.title} content={post.content}></Post>
                     ))}
                 </div>

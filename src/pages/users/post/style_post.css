@@ -1,0 +1,64 @@
+@import "../../../css/main.css";
+
+.post-main {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    align-items: start;
+}
+
+.div-hot-post {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.div-post-main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.div-title-post {
+    display: flex;
+    gap: 30px;
+    font-size: large;
+    justify-content: left;
+    align-items: center;
+}
+
+.div-post-main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div-post-main-list .div-post-item {
+    width: 100%;
+    background-color: white;
+    border: 1px solid var(--color-main);
+    border-radius: 20px;
+}
+
+.div-post-main-list .sp-title-content-post:hover {
+    color: var(--color-click);
+}
+
+.div-title-hot-post {
+    font-size: x-large;
+    background-color: var(--color-click);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+}
+
+.div-hot-post-list .div-post-item {
+    width: 100%;
+    border-bottom: 0.5px solid var(--color-click);
+}
+.div-hot-post-list .sp-title-content-post:hover {
+    color: var(--color-click);
+}
