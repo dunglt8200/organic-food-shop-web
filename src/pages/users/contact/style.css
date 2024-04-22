@@ -92,6 +92,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.div-input-mail textarea:focus{
+    outline: none;
+}
+
 .input-text {
     border: 1px solid #e3dada;
     border-radius: 20px;
@@ -111,9 +115,3 @@
     color: var(--color-main);
     outline: none;
 };
-
-
-
-textarea:focus {
-    outline: none;
-}
