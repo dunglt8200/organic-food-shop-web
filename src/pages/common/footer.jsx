@@ -6,7 +6,7 @@ function Footer() {
       <div className="div-footer">
          <ul className="ul-footer">
             <li className="li-footer-item size-text-30 style-text">
-               <span>TDL Organic Food</span>
+               <span>TD Organic Food</span>
             </li>
             <li className="li-footer-item">
                <span>Địa chỉ: 298 Dương Quảng Hàm, p.15, Gò Vấp, HCM</span>
