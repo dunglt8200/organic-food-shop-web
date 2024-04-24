@@ -1,0 +1,42 @@
+@import "../../../css/main.css";
+
+.main-store {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-category-store {
+    display: flex;
+    flex-direction: column;
+    width: 71.5%;
+    border: 1px solid var(--color-main);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.div-category-store:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-title-category-store {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.div-line-title-category-store {
+    width: 98%;
+    height: 1px;
+    background-color: var(--color-main);
+}
+
+.div-main-category-store {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    row-gap: 20px;
+}

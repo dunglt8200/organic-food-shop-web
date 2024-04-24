@@ -4,7 +4,7 @@ import "./style_homepage.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Product from "../../common/product";
-import { SanPhamSlides, TitleTabs, ProductTabs, Posts } from "../../../utils/const";
+import { SanPhamSlides, Categorys , SanPhams, Posts } from "../../../utils/const";
 import Post from "../../common/post";
 
 function HomePage() {
@@ -33,16 +33,16 @@ function HomePage() {
                 <div>
                     <Tabs>
                         <TabList>
-                            {TitleTabs.map((title, key_title) => (
+                            {Categorys.map((title, key_title) => (
                                 <Tab key={key_title}>{title.name}</Tab>
                             ))}
                         </TabList>
                         
                         <div>
-                        {TitleTabs.map((title2, key_title2) => (
+                        {Categorys.map((title2, key_title2) => (
                             <TabPanel key={key_title2}>
                             {                           
-                                ProductTabs.map((product, product_key)=> (
+                                SanPhams.map((product, product_key)=> (
                                     (title2.id === 0 || title2.id === product.id_title) && (
                                         <Product url={product.url} name={product.name} price={product.price}></Product>
                                     )

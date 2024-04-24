@@ -10,7 +10,7 @@ import ThitBo from "../static/tab/img/thit-bo.jpg";
 import ThitGa from "../static/tab/img/thit-ga.jpg";
 import ChuoiXanh from "../static/tab/img/chuoi.jpg";
 import Man from "../static/tab/img/man.jpg";
-import KhoaiTayChien from "../static/tab/img/khoai-tay-chien12212.jpg";
+import CaiNgot from "../static/tab/img/cai-ngot.jpg";
 import TaoXanh from "../static/tab/img/tao_xanh.jpg";
 import NhoTim from "../static/tab/img/Nho.jpg";
 import Post1 from "../static/post/post-1.jpg";
@@ -92,36 +92,17 @@ export const Menus = [
     }
 ];
 
-export const TitleTabs = [
-    {
-        id: 0,
-        name: "Tất cả"     
-    },
-    {
-        id: 1,
-        name: "Thit tươi"     
-    },
-    {
-        id: 2,
-        name: "Trái cây"     
-    },
-    {
-        id: 3,
-        name: "Thức ăn nhanh"   
-    }
-];
-
-export const ProductTabs = [
+export const SanPhams = [
     {
         name: "Thịt bò",
         price: 125000,
-        id_title: 1,
+        id_title: 3,
         url: ThitBo
     },
     {
         name: "Thịt gà",
         price: 75000,
-        id_title: 1,
+        id_title: 3,
         url: ThitGa
     },
     {
@@ -149,10 +130,10 @@ export const ProductTabs = [
         url: NhoTim
     },
     {
-        name: "Khoai tây chiên",
-        price: 40000,
-        id_title: 3,
-        url: KhoaiTayChien
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
     }
 ];
 
@@ -181,5 +162,20 @@ export const Posts = [
         url: Post5,
         title: "NẮNG VÀNG TRÊN VƯỜN RAU",
         content: "Nắng vàng, đất đỏ và rau xanh ngọt lành.🍀🍀🍀"
+    },
+];
+
+export const Categorys = [
+    {
+        id: 1,
+        name: "Rau Củ"
+    },
+    {
+        id: 2,
+        name: "Trái Cây"
+    },
+    {
+        id: 3,
+        name: "Thực Phẩm Tươi Sống"
     },
 ]

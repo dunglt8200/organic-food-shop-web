@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { FiAlignJustify } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import "../../utils/const";
-import { Menus } from "../../utils/const";
+import { Menus, Categorys } from "../../utils/const";
 function Header() {
     const [isShowDropDown, setIsShowDropDown] = useState(true)
     const handleButtonDropDownList = () => {
@@ -101,21 +101,11 @@ function Header() {
                     </button>
                     {isShowDropDown && (
                         <ul className="ul-dropdown-menu">
-                            <li className="li-footer-item">
-                                <Link className="link-dropdown-menu" to="">Thịt tươi</Link>
+                            {Categorys.map((item, key) => (
+                                <li className="li-footer-item">
+                                    <Link className="link-dropdown-menu" to="">{item.name}</Link>
                             </li>
-                            <li className="li-footer-item">
-                                <Link className="link-dropdown-menu" to="">Rau củ</Link>                     
-                            </li>
-                            <li className="li-footer-item">
-                                <Link className="link-dropdown-menu" to="">Nước trái cây</Link>
-                            </li>
-                            <li className="li-footer-item">
-                                <Link className="link-dropdown-menu" to="">Trái cây</Link>
-                            </li>
-                            <li className="li-footer-item">
-                                <Link className="link-dropdown-menu" to="">Hải sản</Link>
-                            </li>
+                            ))}                            
                         </ul>
                     )} 
                 </div>

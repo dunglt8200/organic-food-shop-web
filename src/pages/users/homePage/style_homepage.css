@@ -109,6 +109,11 @@
 .div-icon {
     display: flex;
     justify-content: center;
+    border: 1px solid var(--color-click);
+    border-radius: 50%;
+    height: 30px;
+    width: 15%;
+    align-items: center;
 }
 
 .div-icon:hover{
