@@ -34,6 +34,7 @@
     height: 100%;
     display: flex;
     align-items: center; 
+    justify-content: center;
 }
 
 .ul-header-item {
@@ -72,8 +73,9 @@
     text-decoration: none;
 }
 
-.link-menu:hover {
+.link-menu:focus {
     color: var(--color-click);
+    border-bottom: 1px solid var(--color-click);
 }
 
 .ul-dropdown-list {
