@@ -100,6 +100,66 @@ export const SanPhams = [
         url: ThitBo
     },
     {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
+        name: "Thịt bò",
+        price: 125000,
+        id_title: 3,
+        url: ThitBo
+    },
+    {
         name: "Thịt gà",
         price: 75000,
         id_title: 3,
@@ -134,7 +194,109 @@ export const SanPhams = [
         price: 23000,
         id_title: 1,
         url: CaiNgot
-    }
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Cải ngọt",
+        price: 23000,
+        id_title: 1,
+        url: CaiNgot
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
+    {
+        name: "Nho tím",
+        price: 85000,
+        id_title: 2,
+        url: NhoTim
+    },
 ];
 
 export const Posts = [

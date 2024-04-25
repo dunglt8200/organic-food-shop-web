@@ -1,7 +1,7 @@
 import React from "react";
 import {convertIntToVND} from "../../utils/util";
-import { IoEyeOutline } from "react-icons/io5";
-import { BsCart2 } from "react-icons/bs";
+import { FaEye } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa";
 
 function Product(prop) {
     return (
@@ -9,8 +9,8 @@ function Product(prop) {
             <div className="div-img-icon">
                 <img className="img-product" src={prop.url} alt="img"/>
                 <div className="div-eye-cart">
-                    <div className="div-icon"><IoEyeOutline /></div>
-                    <div className="div-icon"><BsCart2 /></div>
+                    <div className="div-icon"><FaEye /></div>
+                    <div className="div-icon"><FaCartPlus /></div>
                 </div>
             </div>
             
