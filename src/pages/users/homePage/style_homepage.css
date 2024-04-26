@@ -21,7 +21,7 @@
 
 .div-sp-item:hover{
     transform: scale(0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--color-click);
     
 }
 
@@ -123,17 +123,17 @@
 
 .div-icon:hover{
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--color-click);
 }
 
 .div-product:hover .div-icon {
     display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--color-click);
 }
 
 .div-product:hover .img-product {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--color-click);
     background-position: 100% 100%;
     opacity: 0.8;
 }
@@ -185,7 +185,7 @@
     transition: box-shadow 0.3s ease;
 }
 .div-post-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--color-click);
 }
 
 .div-content-post {

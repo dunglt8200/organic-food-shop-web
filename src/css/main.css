@@ -308,3 +308,12 @@
     flex-direction: column;
     gap: 25px;
 }
+
+.btn-xem-them {
+    width: 100%;
+    height: 25px;
+    border: none;
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: var(--color-click);
+}

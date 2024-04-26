@@ -103,7 +103,7 @@ function Header() {
                     {isShowDropDown && (
                         <ul className="ul-dropdown-menu">
                             {Categorys.map((item, key) => (
-                                <li className="li-footer-item">
+                                <li key={key} className="li-footer-item">
                                     <Link className="link-dropdown-menu" to="">{item.name}</Link>
                             </li>
                             ))}                            

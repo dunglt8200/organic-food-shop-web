@@ -79,205 +79,239 @@ export const SanPhams = [
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: true
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
-        url: ThitBo
+        url: ThitBo,
+        isHot: false
     },
     {
         name: "Thịt gà",
         price: 75000,
         id_title: 3,
-        url: ThitGa
+        url: ThitGa,
+        isHot: true
     },
     {
         name: "Chuối xanh",
         price: 30000,
         id_title: 2,
-        url: ChuoiXanh
+        url: ChuoiXanh,
+        isHot: true
     },
     {
         name: "Mận an phước",
         price: 22000,
         id_title: 2,
-        url: Man
+        url: Man,
+        isHot: false
     },
     {
         name: "Táo xanh",
         price: 80000,
         id_title: 2,
-        url: TaoXanh
+        url: TaoXanh,
+        isHot: true
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: true
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: true
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot
+        url: CaiNgot,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
     {
         name: "Nho tím",
         price: 85000,
         id_title: 2,
-        url: NhoTim
+        url: NhoTim,
+        isHot: false
     },
 ];
 

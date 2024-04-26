@@ -14,7 +14,7 @@ function HomePage() {
             <div className="div-slide">
                 <Carousel cols={4} rows={1} gap={10} loop>
                     {SanPhamSlides.map((sp, key_sp) => (
-                        <Carousel.Item>
+                        <Carousel.Item key={key_sp}>
                         <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
                             <span className="sp-name-sp">{sp.name}</span>
                         </div>
@@ -43,8 +43,8 @@ function HomePage() {
                             <TabPanel key={key_title2}>
                             {                           
                                 SanPhams.map((product, product_key)=> (
-                                    (title2.id === 0 || title2.id === product.id_title) && (
-                                        <Product url={product.url} name={product.name} price={product.price}></Product>
+                                    (title2.id === product.id_title && product.isHot === true) && (
+                                        <Product key={product_key} url={product.url} name={product.name} price={product.price}></Product>
                                     )
                             ))}
                         </TabPanel>
@@ -61,7 +61,7 @@ function HomePage() {
                 </div>
                 <div className="post">
                     {Posts.slice(0, 2).map((post, key_post) => (
-                        <Post url={post.url} title={post.title} content={post.content}></Post>
+                        <Post key={key_post} url={post.url} title={post.title} content={post.content}></Post>
                     ))}
                 </div>
             </div>
