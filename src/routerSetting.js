@@ -4,7 +4,6 @@ import HomePage from "./pages/users/homePage/homePage";
 import {Routes, Route} from "react-router-dom";
 import MasterLayout from "./pages/common/masterLayout";
 import Store from "./pages/users/store/store";
-import Product from "./pages/users/product/product";
 import Post from "./pages/users/post/post";
 import Contact from "./pages/users/contact/contact";
 
@@ -17,10 +16,6 @@ const renderCompoent = () => {
        {
         path: ROUTERS.USER.CUAHANG,
         compoent: <Store></Store>,
-       },
-       {
-        path: ROUTERS.USER.SANPHAM,
-        compoent: <Product></Product>,
        },
        {
         path: ROUTERS.USER.BAIVIET,

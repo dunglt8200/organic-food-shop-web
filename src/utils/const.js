@@ -64,24 +64,6 @@ export const Menus = [
         name: "CỬA HÀNG",
         path: ROUTERS.USER.CUAHANG
     },
-    // {
-    //     name: "SẢN PHẨM",
-    //     path: ROUTERS.USER.SANPHAM,
-    //     child: [
-    //         {
-    //             name: "Rau củ",
-    //             path: ""
-    //         },
-    //         {
-    //             name: "Hoa quả",
-    //             path: ""
-    //         },
-    //         {
-    //             name: "Đóng hộp",
-    //             path: ""
-    //         }
-    //     ]
-    // },
     {
         name: "BÀI VIẾT",
         path: ROUTERS.USER.BAIVIET
