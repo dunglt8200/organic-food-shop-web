@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import RouterSetting from './routerSetting';
 import {BrowserRouter} from 'react-router-dom';
 import "./css/main.css";
+import "./css/reposive/reposive.Ipad.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
