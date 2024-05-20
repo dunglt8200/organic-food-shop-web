@@ -403,4 +403,27 @@
     .div-eye-cart {
         padding-left: 55px;
     }
+
+    .div-category-store {
+        width: 100%;
+    }
+    
+    .div-map {
+        width: 55%;
+    }
+
+    .post-main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .div-hot-post {
+        width: 100%;
+        height: 50%;
+        display: none;
+    }
+
+    .div-post-main {
+        width: 100%;
+    }
 }
