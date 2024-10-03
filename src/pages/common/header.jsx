@@ -11,6 +11,7 @@ import { FiAlignJustify } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import "../../utils/const";
 import { Menus, Categorys } from "../../utils/const";
+import { PiMagnifyingGlass } from "react-icons/pi";
 
 function Header() {
     const [isShowDropDown, setIsShowDropDown] = useState(true)
@@ -84,46 +85,42 @@ function Header() {
                 {/* cart */}
                 <div className="header-bottom-item justify-content-right">
                     <ul className="ul-header-item">
-                        <li className="li-header-item">
+                        {/* <li className="li-header-item">
                             <span>{convertIntToVND(1001000)}</span>
-                        </li>
+                        </li> */}
                         <li className="li-header-item">
-                        <BsCart />
+                        <BsCart style={
+                            {
+                                color: "white",
+                                width: 70,
+                                height: 40
+                            }
+                            }/>
                         </li>
                     </ul>
                 </div>
             </div>
             {/* dropdown menu */}
             <div className="header-menu-banner">
-                <div className="header-menu">
-                    <button className="button-menu" onClick={handleButtonDropDownList}>
-                        <FiAlignJustify />
-                        Danh sách sản phẩm
-                    </button>
-                    {isShowDropDown && (
-                        <ul className="ul-dropdown-menu">
-                            {Categorys.map((item, key) => (
-                                <li key={key} className="li-footer-item">
-                                    <Link className="link-dropdown-menu" to="">{item.name}</Link>
-                            </li>
-                            ))}                            
-                        </ul>
-                    )} 
-                </div>
                 {/* header-banner */}
                 <div className="header-banner">
                     <div className="header-search">
                         <div className="div-search">
                             <input className="input-search" type="text" placeholder="Bạn đang muốn tìm gì ?"/>
-                            <button className="btn-search">Tìm kiếm</button>                          
+                            <button className="btn-search">
+                                <PiMagnifyingGlass style={{width: 30, height: 30}}/>
+                            </button>                          
                         </div>
                         <div className="div-phone">
                             <div className="phone">
-                            <BsTelephone color="#3f6150"/>
+                            <BsTelephone color="#3f6150" style={
+                                {
+                                    width: 20,
+                                    height: 20
+                                }}/>
                             </div>
                             <div className="div-hotro">
-                                <span className="style-text">039.567.2456</span>
-                                <span>Hỗ trợ 24/7</span>
+                                <span className="style-text">Hotline: 039 567 2456</span>
                             </div>
                         </div>  
                     </div>             
