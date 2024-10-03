@@ -11,17 +11,21 @@ function HomePage() {
     return (
        <div className="main">
             {/* slide */}
-            <div className="div-slide">
-                <Carousel cols={4} rows={1} gap={10} loop>
-                    {SanPhamSlides.map((sp, key_sp) => (
-                        <Carousel.Item key={key_sp}>
-                        <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
-                            <span className="sp-name-sp">{sp.name}</span>
-                        </div>
-                    </Carousel.Item>
-                    ))}                           
-                </Carousel>
-            </div>
+            <div className="div-slide-main">
+                <div className="div-slide">
+                    <div class="line"></div>
+                    <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
+                    <Carousel cols={4} rows={1} gap={10} loop>
+                        {SanPhamSlides.map((sp, key_sp) => (
+                            <Carousel.Item key={key_sp}>
+                            <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
+                                <span className="sp-name-sp">{sp.name}</span>
+                            </div>
+                        </Carousel.Item>
+                        ))}                           
+                    </Carousel>
+                </div>
+            </div>     
             {/* sản phẩm nổi bật*/}
             <div className="div-sp-hot">
                 {/* title */}

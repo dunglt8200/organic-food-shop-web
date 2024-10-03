@@ -1,16 +1,17 @@
 @import "../../../css/common.css";
 
 .main {
-    padding: 1% 13%;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-sp-item {
     width: 100%;
     height: 200px;
-    background-color: var(--color-main);
+    background-color: white;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -21,8 +22,7 @@
 
 .div-sp-item:hover{
     transform: scale(0.9);
-    box-shadow: 0 2px 4px var(--color-click);
-    
+    box-shadow: 0 2px 4px #9f9b8f;
 }
 
 .div-space {
@@ -222,4 +222,25 @@
 
 .div-img-post-item:hover .img-post-item {
     transform: scale(1.1);
+}
+
+.div-slide {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.line {
+    width: 10%;
+    border-bottom: 2px solid var(--color-orange);
+    margin: 10px 0;
+}
+
+.div-slide-main {
+    width: 100%;
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
 }
