@@ -7,18 +7,19 @@ import { convertIntToVND } from "../../utils/util";
 import { RiMailSendLine } from "react-icons/ri";
 import { BsCart } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import { FiAlignJustify } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import "../../utils/const";
-import { Menus, Categorys } from "../../utils/const";
+import { Menus } from "../../utils/const";
 import { PiMagnifyingGlass } from "react-icons/pi";
+import SlideImg from "../common/slideImg";
 
 function Header() {
-    const [isShowDropDown, setIsShowDropDown] = useState(true)
-    const handleButtonDropDownList = () => {
-        setIsShowDropDown(!isShowDropDown)
-    }
-
+    const images = [
+        'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/1482101/pexels-photo-1482101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    ]
+    
     return(
         <div>
             {/* header top */}
@@ -85,9 +86,6 @@ function Header() {
                 {/* cart */}
                 <div className="header-bottom-item justify-content-right">
                     <ul className="ul-header-item">
-                        {/* <li className="li-header-item">
-                            <span>{convertIntToVND(1001000)}</span>
-                        </li> */}
                         <li className="li-header-item">
                         <BsCart style={
                             {
@@ -126,15 +124,9 @@ function Header() {
                         </div>  
                     </div>             
                     <div className="div-slide-banner">
-                        {/* <div className="div-banner">
-                            <span className="sp-1">TRÁI CÂY TƯƠI</span>
-                            <br />
-                            <span className="sp-2">RAU QUẢ <br /> SẠCH 100%</span>
-                            <br />
-                            <span>Miễn phí giao hàng tận nơi</span>
-                            <br />
-                            <Link className="link-buy" to="">MUA NGAY</Link>
-                        </div> */}
+                        <div className="slide-banner">
+                            <SlideImg images={images} />
+                        </div> 
                     </div>
                 </div>                          
             </div>

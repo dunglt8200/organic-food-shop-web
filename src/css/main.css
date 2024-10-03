@@ -221,6 +221,9 @@
     width: 100%;
     height: 70vh;
     background-color: #9f9b8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-search {
@@ -341,4 +344,18 @@
     position: absolute;
     top: -8px;
     left: 45px;
+}
+
+.slide-banner {
+    width: 80%;
+    height: 100%;
+    background-color: #1c5b41;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
