@@ -96,6 +96,7 @@ function Header() {
                                 height: 40
                             }
                             }/>
+                            <div className="div-count-cart">0</div>
                         </li>
                     </ul>
                 </div>
@@ -124,8 +125,8 @@ function Header() {
                             </div>
                         </div>  
                     </div>             
-                    <div className="img-banner">
-                        <div className="div-banner">
+                    <div className="div-slide-banner">
+                        {/* <div className="div-banner">
                             <span className="sp-1">TRÁI CÂY TƯƠI</span>
                             <br />
                             <span className="sp-2">RAU QUẢ <br /> SẠCH 100%</span>
@@ -133,7 +134,7 @@ function Header() {
                             <span>Miễn phí giao hàng tận nơi</span>
                             <br />
                             <Link className="link-buy" to="">MUA NGAY</Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>                          
             </div>
