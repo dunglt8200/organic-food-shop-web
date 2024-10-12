@@ -59,10 +59,10 @@ function HomePage() {
             </div>
             {/* Bài viết */}
             <div className="div-post">
-                <div className="title-sp-hot">
-                    <span>Bài viết</span>
-                    <div className="div-space"></div>
-                </div>
+                <div className="div-post-title">
+                    <div class="line"></div>
+                    <span style={{color: "#fff", fontSize: 30, fontWeight: "bold"}}>TIN TỨC SẢN PHẨM</span>
+                </div>          
                 <div className="post">
                     {Posts.slice(0, 2).map((post, key_post) => (
                         <Post key={key_post} url={post.url} title={post.title} content={post.content}></Post>

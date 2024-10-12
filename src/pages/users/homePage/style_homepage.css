@@ -173,7 +173,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    background-color: var(--color-click);
 }
 
 .div-post-item {
@@ -183,6 +183,8 @@
     gap: 20px;
     background-color: var(--color-main);
     transition: box-shadow 0.3s ease;
+    height: 60%;
+    overflow: hidden;
 }
 .div-post-item:hover {
     box-shadow: 0 2px 4px var(--color-click);
@@ -200,10 +202,10 @@
 .post {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    border: 1px solid var(--color-main);
-    border-radius: 5px;
-    padding: 20px;
+    width: 80%;
+    padding: 0 10% 0 10%;
+    gap: 10px;
+    height: 450px;
 }
 
 .div-img-post-item {
@@ -243,4 +245,11 @@
     justify-content: center;
     align-items: center;
     height: 350px;
+}
+
+.div-post-title {
+    width: 80%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
 }
