@@ -7,15 +7,17 @@ import { PaginatedList } from "react-paginated-list";
 
 function Post() {
     return (
-        <div className="post-main">
+        <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center" }}>
+             <div className="post-main">
             {/* Tin nổi bậc */}
             <div className="div-hot-post">
-                <div className="div-title-hot-post">
-                    <span>Tin nổi bật</span>
-                </div>
+                <span style={{ fontWeight: "bold", fontSize: 25 }}>TIN TỨC NỔI BẬT</span>
                 <div className="div-hot-post-list">
                     {Posts.slice(0,2).map((post_item, post_item_key)=> (
-                        <PostItem url={post_item.url} title={post_item.title.toUpperCase()}></PostItem>
+                        <div key={post_item_key} className="div-hot-post-item">
+                            <img style={{ width: "25%", height: "20%", borderRadius: 5 }} src={post_item.url} alt="" />
+                            <span style={{ fontSize: 17, color: "#231f20" }}>{post_item.title}</span>
+                        </div>
                     ))}
                 </div>
             </div>
@@ -40,6 +42,7 @@ function Post() {
                 </div>
             </div>
         </div>
+        </div>      
     )
 }
 
