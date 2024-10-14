@@ -82,8 +82,8 @@
     text-decoration: none;
 }
 
-.link-menu:focus {
-    color: var(--color-orange);
+.link-menu.active {
+    color: var(--color-orange) !important;
     border-bottom: 1px solid var(--color-orange);
 }
 

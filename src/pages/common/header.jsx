@@ -20,6 +20,11 @@ function Header() {
         'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     ]
     
+    const [activeIndex, setActiveIndex] = useState(0);
+    const handleMenuClick = (index) => {
+        setActiveIndex(index);
+    };
+    
     return(
         <div>
             {/* header top */}
@@ -68,8 +73,8 @@ function Header() {
                 <div className="header-bottom-item-center">
                     <ul className="ul-header-item-menu">
                        {Menus.map((menu, key)=> (
-                        <li className="li-header-item" key={key}>
-                             <Link className="link-menu" to={menu.path}>{menu.name}</Link>
+                        <li className= "li-header-item" key={key}>
+                             <Link className={`link-menu ${activeIndex === key ? 'active' : ''}`} key={key} onClick={() => handleMenuClick(key)} to={menu.path}>{menu.name}</Link>
                              {menu?.child?.length && (
                                 <ul className="ul-dropdown-list">
                                     {menu.child.map((child, keyChild) => (
