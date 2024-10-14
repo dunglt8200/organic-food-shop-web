@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Post(prop) {
     return (
@@ -11,10 +12,16 @@ function Post(prop) {
             </div>
            <div className="div-content-post">
                 <Link style={{color: "black", textDecoration: "none"}} to="">
-                    <span className="style-text sp-title-content-post">{prop.title}</span>
-                </Link>   
-                <span>{prop.content}</span>
+                    <span className="hover-post-title" style={{ color: "#fe9614", fontWeight: "bold" }}>{prop.title}</span>
+                </Link>
+                <span style={{ color: "#fff", fontSize: "small", fontStyle: "italic" }}>{prop.content}</span>
            </div>
+           <div className="div-read-more">
+                <Link style={{ color: "black", textDecoration: "none"}} to="">
+                    <span>Xem thêm </span>                                  
+                </Link>
+                <IoIosArrowRoundForward style={{color: "#fe9614", width: 30, height: 30 }}/>               
+           </div>         
         </div>
     )
 }

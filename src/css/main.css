@@ -329,7 +329,6 @@
 .div-master-layout {
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
 .btn-xem-them {
@@ -385,4 +384,13 @@
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.div-read-more {
+    display: flex;
+    align-items: center;
+}
+
+.div-read-more:hover span {
+    color: var(--color-orange)
 }

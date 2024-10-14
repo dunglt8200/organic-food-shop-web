@@ -6,6 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 import Product from "../../common/product";
 import { SanPhamSlides, Categorys , SanPhams, Posts } from "../../../utils/const";
 import Post from "../../common/post";
+import { shortenText } from "../../../utils/util";
 
 function HomePage() {
     return (
@@ -64,8 +65,8 @@ function HomePage() {
                     <span style={{color: "#fff", fontSize: 30, fontWeight: "bold"}}>TIN TỨC SẢN PHẨM</span>
                 </div>          
                 <div className="post">
-                    {Posts.slice(0, 2).map((post, key_post) => (
-                        <Post key={key_post} url={post.url} title={post.title} content={post.content}></Post>
+                    {Posts.slice(0, 3).map((post, key_post) => (
+                        <Post key={key_post} url={post.url} title={post.title.toUpperCase()} content={shortenText(post.content, 150)}></Post>
                     ))}
                 </div>
             </div>
