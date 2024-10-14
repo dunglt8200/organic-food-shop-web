@@ -25,24 +25,26 @@ function HomePage() {
                         </Carousel.Item>
                         ))}                           
                     </Carousel>
-                </div>
+                    <div style={{width: "100%", display: "flex", justifyContent: "center" }}>
+                        <button className="btn-read-all">XEM TẤT CẢ</button>
+                    </div>                   
+                </div>               
             </div>     
             {/* sản phẩm nổi bật*/}
             <div className="div-sp-hot">
                 {/* title */}
-                <div className="title-sp-hot">
-                    <span>Sản Phẩm Nổi Bật</span>
-                    <div className="div-space"></div>
-                </div>
-                {/* tab */}
-                <div>
+                <div className="div-sp-hot-main">
+                    <div className="title-sp-hot">
+                        <div class="line"></div>
+                        <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM GIÁ TỐT</span>
+                    </div>
+                    <div>
                     <Tabs>
                         <TabList>
                             {Categorys.map((title, key_title) => (
                                 <Tab key={key_title}>{title.name}</Tab>
                             ))}
                         </TabList>
-                        
                         <div>
                         {Categorys.map((title2, key_title2) => (
                             <TabPanel key={key_title2}>
@@ -56,7 +58,11 @@ function HomePage() {
                         ))}
                         </div>               
                     </Tabs>
+                    <div style={{width: "100%", display: "flex", justifyContent: "center" }}>
+                        <button className="btn-read-all">XEM TẤT CẢ</button>
+                    </div>
                 </div>
+                </div>               
             </div>
             {/* Bài viết */}
             <div className="div-post">

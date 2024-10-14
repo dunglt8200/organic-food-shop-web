@@ -394,3 +394,32 @@
 .div-read-more:hover span {
     color: var(--color-orange)
 }
+
+.div-sp-hot {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn-read-all {
+    width: 18%;
+    height: 6vh;
+    border: none;
+    background-color: var(--color-click);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-read-all:hover {
+    background-color: var(--color-orange);
+}
+
+.div-sp-hot-main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
