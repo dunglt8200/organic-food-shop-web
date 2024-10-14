@@ -20,7 +20,7 @@ function Header() {
         'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     ]
     
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null);
     const handleMenuClick = (index) => {
         setActiveIndex(index);
     };
