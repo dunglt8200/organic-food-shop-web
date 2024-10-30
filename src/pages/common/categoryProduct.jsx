@@ -9,7 +9,7 @@ function CategoryProduct({list_sanpham, id_category, name}) {
     const [isShowButtonXemThem, setIsShowButtonXemThem] = useState(true);
 
     const handleSplit = () => {
-        const size = 5;
+        const size = 4;
         const newArray = [];
         const countClick = countClickXemThem + 1;
 
@@ -26,7 +26,7 @@ function CategoryProduct({list_sanpham, id_category, name}) {
     };
 
     useEffect(() => {
-        const productShowFirsts = list_sanpham_filter.slice(0,5)
+        const productShowFirsts = list_sanpham_filter.slice(0,4)
         setproducts(productShowFirsts)
     }, [])
 
