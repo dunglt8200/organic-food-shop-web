@@ -1,7 +1,10 @@
 import React from "react";
 import "./style_post.css";
 import { Posts } from "../../../utils/const";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 import { PaginatedList } from "react-paginated-list";
+import { shortenText } from "../../../utils/util";
 
 function Post() {
     return (
@@ -26,7 +29,19 @@ function Post() {
                 </div>
                 {/* Phân trang list*/}
                 <div className="div-post-main-list">
-                    
+                    {Posts.map((item) => (
+                        <div className="grid-post-item">
+                            <img style={{width: "90%", height: 200, borderRadius: 20 }} src={item.url}></img>
+                            <span style={{ color: "black", fontWeight: "bold", fontSize: 15 }}>{item.title.toUpperCase()}</span> 
+                            <span style={{ color: "#656565" }}>{shortenText(item.content, 100, false)}</span>
+                            <div className="div-read-more">
+                                <Link style={{ color: "black", textDecoration: "none"}} to="">
+                                    <span>Xem thêm </span>                                  
+                                </Link>
+                                <IoIosArrowRoundForward style={{color: "#fe9614", width: 30, height: 30 }}/>               
+                            </div>                                                          
+                        </div>                            
+                    ))}                                  
                 </div>
             </div>
         </div>

@@ -6,10 +6,10 @@ export const convertIntToVND = (number) => {
       return VND.format(number);
 }
 
-export const shortenText = (text, maxLength) => {
+export const shortenText = (text, maxLength, isAddDot) => {
   if (text.length <= maxLength) {
     return text;
   } else {
-    return text.substring(0, maxLength) + '...';
+    return text.substring(0, maxLength) + (isAddDot ? '...' : "");
   }
 }

@@ -72,7 +72,7 @@ function HomePage() {
                 </div>          
                 <div className="post">
                     {Posts.slice(0, 3).map((post, key_post) => (
-                        <Post key={key_post} url={post.url} title={post.title.toUpperCase()} content={shortenText(post.content, 150)}></Post>
+                        <Post key={key_post} url={post.url} title={post.title.toUpperCase()} content={shortenText(post.content, 150, true)}></Post>
                     ))}
                 </div>
             </div>

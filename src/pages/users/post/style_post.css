@@ -34,12 +34,6 @@
     align-items: center;
 }
 
-.div-post-main-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .div-post-main-list .div-post-item {
     width: 100%;
     background-color: white;
@@ -75,4 +69,17 @@
 
 .div-hot-post-item:hover span {
     color: var(--color-orange) !important;
+}
+
+.div-post-main-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 4vh;
+    column-gap: 4vh;
+}
+
+.grid-post-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
