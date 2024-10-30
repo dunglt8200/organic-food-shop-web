@@ -32,9 +32,9 @@ function CategoryProduct({list_sanpham, id_category, name}) {
 
     return (
         <div className="div-category-store">
-            <div className="div-title-category-store">
-                <span>{name}</span>
+            <div className="div-title-category-store">        
                 <div className="div-line-title-category-store"></div>
+                <span>{name}</span>
             </div>
             <div className="div-main-category-store">
                 {products.map((item_sp, key_sp) => (

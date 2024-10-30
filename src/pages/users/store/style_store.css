@@ -27,12 +27,15 @@
     padding-left: 20px;
     padding-top: 10px;
     color: var(--color-click);
+    gap: 4vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .div-line-title-category-store {
-    width: 98%;
-    height: 1px;
-    background-color: var(--color-main);
+    width: 20%;
+    height: 0.1vh;
+    background-color: var(--color-orange);
 }
 
 .div-main-category-store {
