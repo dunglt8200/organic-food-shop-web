@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from 'react-grid-carousel';
 import "./style_homepage.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -16,7 +15,7 @@ function HomePage() {
                 <div className="div-slide">
                     <div class="line"></div>
                     <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
-                    <Carousel cols={4} rows={1} gap={10} loop>
+                    {/* <Carousel cols={4} rows={1} gap={10} loop>
                         {SanPhamSlides.map((sp, key_sp) => (
                             <Carousel.Item key={key_sp}>
                             <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
@@ -24,7 +23,7 @@ function HomePage() {
                             </div>
                         </Carousel.Item>
                         ))}                           
-                    </Carousel>
+                    </Carousel> */}
                     <div style={{width: "100%", display: "flex", justifyContent: "center" }}>
                         <button className="btn-read-all">XEM TẤT CẢ</button>
                     </div>                   
