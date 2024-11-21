@@ -2,7 +2,6 @@ import "./style_post.css";
 import { Posts } from "../../../utils/const";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { PaginatedList } from "react-paginated-list";
 import { shortenText } from "../../../utils/util";
 import { React, useState } from "react";
 
