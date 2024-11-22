@@ -6,6 +6,11 @@ import Product from "../../common/product";
 import { SanPhamSlides, Categorys , SanPhams, Posts } from "../../../utils/const";
 import Post from "../../common/post";
 import { shortenText } from "../../../utils/util";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode'
+import { FreeMode } from 'swiper/modules';
+import HotIcon from '../../../static/img/hot_16728370.png';
 
 function HomePage() {
     return (
@@ -15,16 +20,24 @@ function HomePage() {
                 <div className="div-slide">
                     <div class="line"></div>
                     <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
-                    {/* <Carousel cols={4} rows={1} gap={10} loop>
-                        {SanPhamSlides.map((sp, key_sp) => (
-                            <Carousel.Item key={key_sp}>
-                            <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
-                                <span className="sp-name-sp">{sp.name}</span>
-                            </div>
-                        </Carousel.Item>
-                        ))}                           
-                    </Carousel> */}
-                    <div style={{width: "100%", display: "flex", justifyContent: "center" }}>
+                    <div>
+                        <Swiper
+                            modules={[FreeMode]}
+                            freeMode={true}
+                            slidesPerView={4}
+                            spaceBetween={1}
+                        >
+                            {SanPhamSlides.map((sp, key_sp) => (
+                            <SwiperSlide key={key_sp}>
+                                <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
+                                    <span className="sp-name-sp">{sp.name}</span>                           
+                                    <img src= {HotIcon} style={{ position: "absolute", top: 0, right: 0, width: "1", height: "1" }}/>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                        </Swiper>
+                    </div>                    
+                    <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                         <button className="btn-read-all">XEM TẤT CẢ</button>
                     </div>                   
                 </div>               
