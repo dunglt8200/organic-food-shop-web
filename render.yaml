@@ -1,9 +1,10 @@
-static:
-  # Chỉ định thư mục build của ứng dụng React
-  build:
-    path: ./build
-
-  # Chuyển hướng tất cả các route không tìm thấy về index.html
-  routes:
-    - source: /.*
-      destination: /index.html
+services:
+  - type: web
+    name: my-react-app
+    env: static
+    staticPublishPath: /path/to/build
+    buildCommand: npm run build
+    startCommand: npm start
+    routes:
+      - src: /*
+        dest: /index.html
