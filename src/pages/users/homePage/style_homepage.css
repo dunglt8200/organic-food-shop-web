@@ -104,12 +104,13 @@
 .div-eye-cart {
     display: none;
     flex-direction: row;
-    gap: 30%;
     width: 100%;
     justify-content: center;
     font-size: 25px;
-    color: var(--color-click);
+    color: white;
     position: absolute;
+    height: 20%;
+    align-items: center;
 }
 
 .div-icon {
@@ -124,18 +125,14 @@
     transform: scale(1.1);
 }
 
-.div-eye-cart:hover .div-icon{
+.div-eye-cart:hover .div-icon, .div-eye-cart:hover span {
     color: var(--color-orange);
 }
 
 .div-product:hover .div-eye-cart {
     display:flex;
     z-index: 99;
-    background-color: #9f9b8f;
-}
-
-.div-eye-cart:hover {
-    background-color: var(--color-click) !important;
+    background-color: #596067;
 }
 
 .div-name-price-product {
@@ -150,9 +147,9 @@
     flex-direction: column;
     justify-content: end;
     position: relative;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
-    background-color: beige;
+    background: #bbbcc3;
 }
 
 .sp-name-sp {

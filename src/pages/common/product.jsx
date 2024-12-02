@@ -1,7 +1,6 @@
 import React from "react";
 import {convertIntToVND} from "../../utils/util";
-import { HiOutlineEye } from "react-icons/hi2";
-import { BiCartAdd } from "react-icons/bi";
+import { LiaShoppingBagSolid } from "react-icons/lia";
 
 function Product(prop) {
     return (
@@ -9,8 +8,8 @@ function Product(prop) {
             <div className="div-img-icon">
                 <img className="img-product" src={prop.url} alt="img"/>
                 <div className="div-eye-cart">
-                    <div className="div-icon"><HiOutlineEye /></div>
-                    <div className="div-icon"><BiCartAdd /></div>
+                    <div className="div-icon"><LiaShoppingBagSolid /></div>
+                    <span style={{ fontSize: 16 }}>Thêm vào giỏ hàng</span>
                 </div>
             </div>
             
