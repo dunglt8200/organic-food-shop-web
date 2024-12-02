@@ -7,7 +7,7 @@ const Slideshow = ({images}) => {
   return (
       <Slide>
         {images && images.map((image, index) => (
-            <img src={image} alt={`slide-${index}`} />
+            <img key={index} src={image} alt={`slide-${index}`} />
         ))}
       </Slide>
   );

@@ -18,6 +18,9 @@ import Post2 from "../static/post/post-2.jpg";
 import Post3 from "../static/post/post-3.jpg";
 import Post4 from "../static/post/post-4.jpg";
 import Post5 from "../static/post/post-5.jpg";
+import { GiFruitBowl } from "react-icons/gi";
+import { GiMeat } from "react-icons/gi";
+import { GiChestnutLeaf } from "react-icons/gi";
 import { ROUTERS } from "./router";
 
 export const SanPhamSlides = [
@@ -83,10 +86,10 @@ export const SanPhams = [
         isHot: true
     },
     {
-        name: "Thịt bò",
+        name: "Thịt gà",
         price: 125000,
         id_title: 3,
-        url: ThitBo,
+        url: ThitGa,
         isHot: false
     },
     {
@@ -181,10 +184,10 @@ export const SanPhams = [
         isHot: true
     },
     {
-        name: "Nho tím",
+        name: "Cam",
         price: 85000,
         id_title: 2,
-        url: NhoTim,
+        url: CamTuoi,
         isHot: true
     },
     {
@@ -195,17 +198,17 @@ export const SanPhams = [
         isHot: true
     },
     {
-        name: "Cải ngọt",
+        name: "Khoai tây",
         price: 23000,
         id_title: 1,
-        url: CaiNgot,
+        url: KhoaiTay,
         isHot: false
     },
     {
-        name: "Cải ngọt",
+        name: "Cà rốt",
         price: 23000,
         id_title: 1,
-        url: CaiNgot,
+        url: CaRot,
         isHot: false
     },
     {
@@ -346,14 +349,17 @@ export const Posts = [
 export const Categorys = [
     {
         id: 1,
-        name: "Rau Củ"
+        name: "Rau Củ",
+        icon: <GiChestnutLeaf />
     },
     {
         id: 2,
-        name: "Trái Cây"
+        name: "Trái Cây",
+        icon: <GiFruitBowl />
     },
     {
         id: 3,
-        name: "Thực Phẩm Tươi Sống"
+        name: "Thực Phẩm Tươi Sống",
+        icon: <GiMeat />
     },
 ]

@@ -18,7 +18,7 @@ function HomePage() {
             {/* slide */}
             <div className="div-slide-main">
                 <div className="div-slide">
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
                     <div>
                         <Swiper
@@ -47,7 +47,7 @@ function HomePage() {
                 {/* title */}
                 <div className="div-sp-hot-main">
                     <div className="title-sp-hot">
-                        <div class="line"></div>
+                        <div className="line"></div>
                         <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM GIÁ TỐT</span>
                     </div>
                     <div>
@@ -79,7 +79,7 @@ function HomePage() {
             {/* Bài viết */}
             <div className="div-post">
                 <div className="div-post-title">
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <span style={{color: "#fff", fontSize: 30, fontWeight: "bold"}}>TIN TỨC SẢN PHẨM</span>
                 </div>          
                 <div className="post">
