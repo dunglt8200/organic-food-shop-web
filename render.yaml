@@ -1,0 +1,9 @@
+static:
+  # Chỉ định thư mục build của ứng dụng React
+  build:
+    path: ./build
+
+  # Chuyển hướng tất cả các route không tìm thấy về index.html
+  routes:
+    - source: /.*
+      destination: /index.html
