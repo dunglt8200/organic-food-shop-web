@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Categorys, SanPhams } from "../../../utils/const";
 import "./style_store.css";
 import Product from "../../common/product";
+import { Link } from "react-router-dom";
 
 function Store() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -28,7 +29,9 @@ function Store() {
                 </div>                
                 <ul className="ul-menu-category">
                     {Categorys.map((item_category) => (
-                        <li className={`li-menu-category ${item_category.id === activeIndex ? 'active':''}`}  onClick={() => handleMenuClick(item_category.id)}>{item_category.name}</li>
+                        <li className="li-menu-category">
+                            <Link className={`link-menu-category ${item_category.id === activeIndex ? 'active':''}`}  onClick={() => handleMenuClick(item_category.id)}>{item_category.name}</Link>
+                        </li>
                     ))}
                 </ul>            
             </div>
