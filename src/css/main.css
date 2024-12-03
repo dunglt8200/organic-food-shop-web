@@ -423,3 +423,54 @@
     display: flex;
     flex-direction: column;
 }
+
+.modal-add-to-cart-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal-add-to-cart-title {
+    width: 100%;
+    height: 60px;
+    background-color: #1c5b41;
+    color: white;
+    display: flex;
+    align-items: center;  
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.btn-x {
+    border: none;
+    color: white;
+    outline: none;
+    background-color: #1c5b41;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.div-money {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:end;
+    gap: 10px;
+}
+
+.btn-thanh-toan {
+    width: 30%;
+    font-size: 14px;
+    color: white;
+    background-color: #1c5b41;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 15px;
+}
