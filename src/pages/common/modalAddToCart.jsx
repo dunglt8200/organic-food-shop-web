@@ -3,11 +3,15 @@ import Modal from "react-modal";
 import { MdDownloadDone } from "react-icons/md";
 import DataTable from 'react-data-table-component';
 import { CustomStyleTables } from "../../utils/const";
+import {convertIntToVND} from "../../utils/util";
 
-function ModalAddToCart({ isOpen, onRequestClose, name, url, price }) {
+function ModalAddToCart({ isOpen, onRequestClose, ...prop }) {
     const customStyles = {
+        overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          },
         content: {
-          top: '30%',
+          top: '40%',
           left: '50%',
           right: '45%',
           bottom: 'auto',
@@ -15,32 +19,54 @@ function ModalAddToCart({ isOpen, onRequestClose, name, url, price }) {
           transform: 'translate(-50%, -50%)',
           zIndex: 9999,
           padding: 0,
-          backgroundcolor: '#363636'
+          backgroundColor: "#fff",
+          border: "none"
         },
       };
     
       const columns = [
         {
             name: 'Thông tin sản phẩm',
-            selector: row => row.name,
+            selector: row =>(
+                <div style={{display: "flex", flexDirection:"row", alignItems: "center"}}>
+                    <img style={{width: "40%", height: "40%"}} src={row.url} alt="" />
+                    <div className="div-name-add-to-cart">
+                        <span>{row.name}</span>
+                        <button className="btn-del-add-to-cart">Xóa</button>
+                    </div>      
+                </div>
+            ),
+            width: '40%'
         },
         {
             name: 'Số lượng',
             selector: row => 1,
+             width: '20%'
         },
         {
             name: 'Đơn giá',
-            selector: row => row.price,
+            selector: row => (
+                <span style={{color: "#fe9614", fontWeight: "bold", fontSize: 16}}>
+                    {convertIntToVND(row.price)}
+                </span> 
+            ),
+             width: '20%'
         },
         {
             name: 'Thành tiền',
-            selector: row => row.price * 1,
+            selector: row =>(
+                <span style={{color: "#fe9614", fontWeight: "bold", fontSize: 16}}>
+                    {convertIntToVND(row.price * 1)}
+                </span> 
+            ),
+             width: '20%'
         },
     ];
     const data = [
         {
-          name: name,
-          price: price,
+          name: prop.name,
+          price: prop.price,
+          url: prop.url
         }
    ]
    const totalPrice = data.reduce((sum, item) => sum + item.price, 0);
@@ -58,13 +84,13 @@ function ModalAddToCart({ isOpen, onRequestClose, name, url, price }) {
                     <DataTable
                         columns={columns}
                         data={data}
-                        style={CustomStyleTables}
+                        customStyles={CustomStyleTables}
                     />
                 </div>
                 <div className="div-money">
                    <div style={{ display:"flex", justifyContent: "space-between", width: "30%" }}>
                         <span>Tổng tiền</span>
-                        <span>{totalPrice}đ</span>
+                        <span style={{color: "#fe9614", fontWeight: "bold"}}>{convertIntToVND(totalPrice)}</span>
                    </div>
                     <button className="btn-thanh-toan">Thanh toán</button>
                 </div>

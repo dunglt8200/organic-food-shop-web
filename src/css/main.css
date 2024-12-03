@@ -459,11 +459,12 @@
     width: 100%;
     align-items:end;
     gap: 10px;
+    font-size: 18px;
 }
 
 .btn-thanh-toan {
     width: 30%;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     background-color: #1c5b41;
     border-radius: 10px;
@@ -471,6 +472,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 40px;
     margin-bottom: 15px;
+}
+
+.div-name-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-del-add-to-cart {
+    color: red; 
+    border: none;
+    background: none
+}
+
+.btn-del-add-to-cart:hover {
+    color: var(--color-orange);
+    font-style: italic;
 }

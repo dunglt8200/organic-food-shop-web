@@ -368,21 +368,14 @@ export const CustomStyleTables = {
     table: {
       style: {
         width: '100%',
-        height: '400px',
+        height: '300px',
         position: 'relative'
-      },
-    },
-    header: {
-      style: {
-        backgroundColor: '#f4f4f4',
-        fontSize: '18px',
-        fontWeight: 'bold',
-        color: '#333',
       },
     },
     rows: {
       style: {
-        fontSize: '16px',
+        border: '1px solid #ddd',
+        fontSize: '15px',
         color: '#555',
         '&:nth-of-type(even)': {
           backgroundColor: '#f9f9f9',
@@ -390,7 +383,7 @@ export const CustomStyleTables = {
         '&:hover': {
           backgroundColor: '#e2e2e2',
           cursor: 'pointer',
-        },
+        }
       },
     },
     cells: {
@@ -400,10 +393,14 @@ export const CustomStyleTables = {
     },
     headCells: {
       style: {
-        fontSize: '18px !important',
+        fontSize: '15px !important',
         fontWeight: 'bold !important',
-        color: '#333 !important',
-        backgroundColor: '#f4f4f4 !important',
+        color: '#333 !important'
       },
     },
+    headRow: {
+        style: {
+            border: '1px solid #ddd',
+          },
+    }
   };

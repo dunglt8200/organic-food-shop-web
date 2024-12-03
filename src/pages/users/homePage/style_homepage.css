@@ -264,3 +264,11 @@
 .swiper {
     z-index: 0 !important;
 }
+
+.slide-banner div {
+    height: 100% !important;
+}
+
+.slide-banner img{
+    object-fit: fill !important;
+}
