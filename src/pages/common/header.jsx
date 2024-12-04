@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa6";
 import { CiLinkedin, CiUser } from "react-icons/ci";
@@ -12,6 +12,8 @@ import "../../utils/const";
 import { Menus } from "../../utils/const";
 import { PiMagnifyingGlass } from "react-icons/pi";
 import SlideImg from "../common/slideImg";
+import { useLocation } from 'react-router-dom';
+import { ROUTERS } from '../../utils/router';
 
 function Header() {
     const images = [
@@ -19,6 +21,21 @@ function Header() {
         'https://images.pexels.com/photos/1482101/pexels-photo-1482101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     ]
+    const location = useLocation();
+    useEffect(() => {
+        const pathToIndex = {
+            [`/${ROUTERS.USER.HOME}`]: 0,
+            [`/${ROUTERS.USER.CUAHANG}`]: 1,
+            [`/${ROUTERS.USER.BAIVIET}`]: 2,
+            [`/${ROUTERS.USER.LIENHE}`]: 3
+        };
+
+        const currentPath = location.pathname;
+        if (pathToIndex[currentPath] !== undefined) {
+            handleMenuClick(pathToIndex[currentPath]);
+        }
+    }, [location]);
+
     const [activeIndex, setActiveIndex] = useState(null);
     const handleMenuClick = (index) => {
         setActiveIndex(index);
