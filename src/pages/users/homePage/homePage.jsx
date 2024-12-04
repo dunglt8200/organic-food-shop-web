@@ -11,6 +11,8 @@ import 'swiper/css';
 import 'swiper/css/free-mode'
 import { FreeMode } from 'swiper/modules';
 import HotIcon from '../../../static/img/hot_16728370.png';
+import { Link } from 'react-router-dom';
+import { ROUTERS } from "../../../utils/router";
 
 function HomePage() {
     return (
@@ -37,8 +39,10 @@ function HomePage() {
                         ))}
                         </Swiper>
                     </div>                    
-                    <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-                        <button className="btn-read-all">XEM TẤT CẢ</button>
+                    <div>
+                        <Link to={ROUTERS.USER.CUAHANG} style={{ width: "100%", display: "flex", justifyContent: "center", textDecoration: "none"}}>
+                            <button className="btn-read-all">XEM TẤT CẢ</button>
+                        </Link>           
                     </div>
                 </div>               
             </div>     
@@ -70,8 +74,10 @@ function HomePage() {
                         ))}
                         </div>               
                     </Tabs>
-                    <div style={{width: "100%", display: "flex", justifyContent: "center" }}>
-                        <button className="btn-read-all">XEM TẤT CẢ</button>
+                    <div>
+                    <Link to={ROUTERS.USER.CUAHANG} style={{ width: "100%", display: "flex", justifyContent: "center", textDecoration: "none"}}>
+                            <button className="btn-read-all">XEM TẤT CẢ</button>
+                        </Link>  
                     </div>
                 </div>
                 </div>               

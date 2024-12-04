@@ -245,19 +245,29 @@
 .input-search {
     width: 80%;
     height: 100%;
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 15px;
-    border: 1px solid var(--color-main);
+    border: 1px solid var(--color-orange);
+    color: #808080;
 }
 
 .btn-search {
     width: 5%;
     height: 90%;
-    background-color: #fe9614;
+    background-color: var(--color-click);
     border: none;
     color: white;
     border-radius: 0 20px 20px 0;
 }
+
+.btn-search-active {
+    width: 5%;
+    height: 90%;
+    border: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--color-orange)
+  }
 
 .header-banner {
     display: flex;

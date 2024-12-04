@@ -19,12 +19,15 @@ function Header() {
         'https://images.pexels.com/photos/1482101/pexels-photo-1482101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     ]
-    
     const [activeIndex, setActiveIndex] = useState(null);
     const handleMenuClick = (index) => {
         setActiveIndex(index);
     };
-    
+    const [inputTextSearch, setInputTextSearch] = useState("");
+    const handleInputSearchChange = (e) => {
+        setInputTextSearch(e.target.value);
+      };
+
     return(
         <div>
             {/* header top */}
@@ -110,8 +113,8 @@ function Header() {
                 <div className="header-banner">
                     <div className="header-search">
                         <div className="div-search">
-                            <input className="input-search" type="text" placeholder="Bạn đang muốn tìm gì ?"/>
-                            <button className="btn-search">
+                            <input className="input-search" onChange={handleInputSearchChange} type="text" placeholder="Bạn đang muốn tìm gì ?"/>
+                            <button className={`btn-search${inputTextSearch ? "-active" : ""}`}>
                                 <PiMagnifyingGlass style={{width: 30, height: 30}}/>
                             </button>                          
                         </div>
