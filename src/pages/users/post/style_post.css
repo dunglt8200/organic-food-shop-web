@@ -104,3 +104,11 @@
     background-color: #fe9614;
     color: white;
 }
+
+.link-detail-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}

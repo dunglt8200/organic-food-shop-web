@@ -1,15 +1,18 @@
 import React from "react";
 import HotPost from "../common/hotPost";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate  } from "react-router-dom";
 import { Posts } from "../../utils/const";
 import moment from "moment";
 import { CiClock2 } from "react-icons/ci";
 
 function DetailPost() {
+    const navigate = useNavigate();
     const { id } = useParams();
     console.log("Posts", Posts)
     let post = Posts.find(item => item.id.toString() === id);
-
+    function handleReturn() {
+        navigate(-1)
+    }
     return (
         <div className="div-main-detail-post">
             <div className="div-post-relate-to">
@@ -23,8 +26,17 @@ function DetailPost() {
                 <div className="div-post-content">
                     <img src={post.url} alt="" style={{width: "50%", height: "60%"}}/>
                     <span>{post.content}</span>
-                </div>               
-            </div>                              
+                </div>
+                <div className="div-comment">
+                    <span style={{fontSize: 22, color: "#333"}}>Viết bình luận của bạn</span>
+                    <input className="input-comment" type="text" placeholder="Họ và tên"/>
+                    <textarea className="input-comment" style={{height: "150px"}} name="" id="" placeholder="Nội dung"></textarea>
+                    <button className="btn-comment">Bình luận</button>
+                </div>
+                <div style={{width: "100%", display: "flex", justifyContent: "end"}}>
+                    <button className="btn-return" onClick={handleReturn}>Trở về</button>
+                </div>                
+            </div>                                   
         </div>
     )
 }

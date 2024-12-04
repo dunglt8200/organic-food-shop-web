@@ -526,4 +526,44 @@
     gap: 20px;
     font-size: large;
     color: #808080;
+    border-block-end: 0.5px solid #cecbcb;
+    padding-bottom: 40px;
+}
+
+.btn-return {
+    width: 10%;
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: var(--color-click);
+    border-radius: 5px;
+}
+
+.div-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-block-end: 0.5px solid #cecbcb;
+    padding-bottom: 40px;
+}
+
+.input-comment {
+    border: 0.5px solid #cecbcb;
+    outline: none;
+    padding-left: 10px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-top: 5px;
+    width: 60%;
+}
+
+.btn-comment {
+    border: none;
+    color: white;
+    background-color: var(--color-orange);
+    width: 15%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
 }

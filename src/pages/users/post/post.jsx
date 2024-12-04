@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { shortenText } from "../../../utils/util";
 import { React, useState } from "react";
 import HotPost from "../../common/hotPost";
+import { ROUTERS } from "../../../utils/router";
 
 function Post() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -31,15 +32,15 @@ function Post() {
                 <div className="div-post-main-list">
                     {currentPosts.map((item) => (
                         <div className="grid-post-item">
-                            <img style={{ width: 400, height: 200, borderRadius: 20 }} src={item.url} alt=""></img>
-                            <span style={{ color: "black", fontWeight: "bold", fontSize: 15 }}>{item.title.toUpperCase()}</span> 
-                            <span style={{ color: "#656565" }}>{shortenText(item.content, 100, false)}</span>
-                            <div className="div-read-more">
-                                <Link style={{ color: "black", textDecoration: "none"}} to={`${item.id}`}>
+                            <Link className="link-detail-post" to={`/${ROUTERS.USER.BAIVIET}/${item.id}`}>
+                                <img style={{ width: 400, height: 200, borderRadius: 20 }} src={item.url} alt=""></img>
+                                <span style={{ color: "black", fontWeight: "bold", fontSize: 15 }}>{item.title.toUpperCase()}</span>
+                                <span style={{ color: "#656565" }}>{shortenText(item.content, 100, false)}</span>
+                                <div className="div-read-more">                               
                                     <span>Xem thêm </span>                                  
-                                </Link>
-                                <IoIosArrowRoundForward style={{color: "#fe9614", width: 30, height: 30 }}/>               
-                            </div>                                                          
+                                    <IoIosArrowRoundForward style={{color: "#fe9614", width: 30, height: 30 }}/>               
+                                </div> 
+                            </Link>                           
                         </div>                            
                     ))}                                  
                 </div>
