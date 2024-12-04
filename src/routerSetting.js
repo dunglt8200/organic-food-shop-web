@@ -6,6 +6,7 @@ import MasterLayout from "./pages/common/masterLayout";
 import Store from "./pages/users/store/store";
 import Post from "./pages/users/post/post";
 import Contact from "./pages/users/contact/contact";
+import DetailPost from "./pages/common/detailPost";
 
 const renderCompoent = () => {
     const routerPages = [
@@ -20,6 +21,10 @@ const renderCompoent = () => {
        {
         path: ROUTERS.USER.BAIVIET,
         compoent: <Post></Post>,
+       },
+       {
+        path: `${ROUTERS.USER.BAIVIET}/:id`,
+        compoent: <DetailPost></DetailPost>,
        },
        {
         path: ROUTERS.USER.LIENHE,

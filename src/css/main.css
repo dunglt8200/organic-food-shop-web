@@ -493,3 +493,37 @@
     color: var(--color-orange);
     font-style: italic;
 }
+
+.div-main-detail-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.div-post-relate-to {
+    width: 20%;
+    height: 100%;
+}
+
+.div-detail-post {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div-post-relate-to .div-hot-post {
+    width: 95%;
+}
+
+.div-post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+    color: #808080;
+}

@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import { shortenText } from "../../../utils/util";
 import { React, useState } from "react";
+import HotPost from "../../common/hotPost";
 
 function Post() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -19,32 +20,22 @@ function Post() {
     return (
         <div style={{ width: "100%", height: "100%", display: "flex", justifyContent: "center" }}>
              <div className="post-main">
-            {/* Tin nổi bậc */}
-            <div className="div-hot-post">
-                <span style={{ fontWeight: "bold", fontSize: 25 }}>TIN TỨC NỔI BẬT</span>
-                <div className="div-hot-post-list">
-                    {Posts.slice(0,2).map((post_item, post_item_key)=> (
-                        <div key={post_item_key} className="div-hot-post-item">
-                            <img style={{ width: "25%", height: "20%", borderRadius: 5 }} src={post_item.url} alt="" />
-                            <span style={{ fontSize: 17, color: "#231f20" }}>{post_item.title}</span>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {/* Tin nổi bậc */}           
+            <HotPost></HotPost>
+            {/* danh sách tin tức */}  
             <div className="div-post-main">
                 <div className="div-title-post">
                     <span style={{fontWeight: "bold", fontSize: "xx-large"}}>Tin tức</span>
                     <span>(Có tất cả {Posts.length} bài viết)</span>
                 </div>
-                {/* Phân trang list*/}
                 <div className="div-post-main-list">
                     {currentPosts.map((item) => (
                         <div className="grid-post-item">
-                            <img style={{ width: 400, height: 200, borderRadius: 20 }} src={item.url}></img>
+                            <img style={{ width: 400, height: 200, borderRadius: 20 }} src={item.url} alt=""></img>
                             <span style={{ color: "black", fontWeight: "bold", fontSize: 15 }}>{item.title.toUpperCase()}</span> 
                             <span style={{ color: "#656565" }}>{shortenText(item.content, 100, false)}</span>
                             <div className="div-read-more">
-                                <Link style={{ color: "black", textDecoration: "none"}} to="">
+                                <Link style={{ color: "black", textDecoration: "none"}} to={`${item.id}`}>
                                     <span>Xem thêm </span>                                  
                                 </Link>
                                 <IoIosArrowRoundForward style={{color: "#fe9614", width: 30, height: 30 }}/>               
@@ -52,6 +43,7 @@ function Post() {
                         </div>                            
                     ))}                                  
                 </div>
+                {/* Phân trang list*/}
                 <div className="pagination-controls">
                     {Array.from({ length: totalPages }, (_, index) => (
                         <button
@@ -73,7 +65,7 @@ function Post() {
                 </div>
             </div>
         </div>
-        </div>      
+    </div>      
     )
 }
 

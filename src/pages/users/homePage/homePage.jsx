@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Product from "../../common/product";
 import { SanPhamSlides, Categorys , SanPhams, Posts } from "../../../utils/const";
-import Post from "../../common/post";
+import PostHomePage from "../../common/postHomePage";
 import { shortenText } from "../../../utils/util";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -31,7 +31,7 @@ function HomePage() {
                             <SwiperSlide key={key_sp}>
                                 <div className="div-sp-item" style={{backgroundImage: `url(${sp.url})`}}>
                                     <span className="sp-name-sp">{sp.name}</span>                           
-                                    <img src= {HotIcon} style={{ position: "absolute", top: 0, right: 0, width: "1", height: "1" }}/>
+                                    <img src= {HotIcon} alt="" style={{ position: "absolute", top: 0, right: 0, width: "1", height: "1"}}/>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -39,7 +39,7 @@ function HomePage() {
                     </div>                    
                     <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                         <button className="btn-read-all">XEM TẤT CẢ</button>
-                    </div>                   
+                    </div>
                 </div>               
             </div>     
             {/* sản phẩm nổi bật*/}
@@ -84,7 +84,7 @@ function HomePage() {
                 </div>          
                 <div className="post">
                     {Posts.slice(0, 3).map((post, key_post) => (
-                        <Post key={key_post} url={post.url} title={post.title.toUpperCase()} content={shortenText(post.content, 150, true)}></Post>
+                        <PostHomePage key={key_post} url={post.url} title={post.title.toUpperCase()} content={shortenText(post.content, 150, true)} id={post.id}></PostHomePage>
                     ))}
                 </div>
             </div>

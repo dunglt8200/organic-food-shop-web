@@ -320,26 +320,31 @@ export const SanPhams = [
 
 export const Posts = [
     {
+        id: 1,
         url: Post1,
         title: "Thế nào là thực phẩm sạch?",
         content: "Theo các chuyên gia, thực phẩm sạch là thực phẩm trong quá trình nuôi trồng vẫn sử dụng chất hóa học như thuốc trừ sâu, hóa chất tổng hợp... Tuy nhiên, các hoá chất này đều được xử lý theo quy trình để đảm bảo thực phẩm khi thu hoạch chỉ còn dư lượng chất độc hại dưới mức cho phép, không ảnh hưởng tiêu cực cho sức khoẻ người dùng."
     },
     {
+        id: 2,
         url: Post2,
         title: "Và thực phẩm hữu cơ (organic) là gì?",
         content: "Theo quy định, các sản phẩm đạt tiêu chuẩn Organic sẽ được gắn nhãn “Certified Organic Foods” như sữa bột công thức Organic, bột dinh dưỡng cho bé Organic, thịt, trứng, rau và trái cây Organic. Chứng nhận này được gắn trên các sản phẩm không chứa hormone, không chứa thuốc trừ cỏ hay phân bón hóa học, không bị biến đổi gen, không bị chiếu xạ tiệt trùng, không có hương liệu, phẩm màu và chất bảo quản. Tất cả các thực phẩm Organic đều chịu sự kiểm soát liên tục, gắt gao từ khâu đầu đến khâu cuối cùng bởi các tổ chức có thẩm quyền và uy tín về lĩnh vực này."
     },
     {
+        id: 3,
         url: Post3,
         title: "KHI NÀO RAU HỮU CƠ BÌNH DÂN HOÁ",
         content: "Vật giá ngày càng leo thang là điều mà chúng ta luôn nghe thấy mỗi ngày và ước mơ của những người làm nông nghiệp hữu cơ là sản phẩm hữu cơ giá bình dân hơn, người sử dụng rộng rãi hơn để ai ai cũng có cơ hội sử dụng thực phẩm hữu cơ vẫn còn là một bài toán khó. "
     },
     {
+        id: 4,
         url: Post4,
         title: "NÔNG NGHIỆP HỮU CƠ HỒN NHIÊN",
         content: "Nông nghiệp hồn nhiên ... trồng cây không theo bài vở nào hết mà ta chỉ thở cùng hơi thở của cây, ngắm chúng trưởng thành và theo dõi hỗ trợ trợ ngay khi chúng cần, mình yêu tự do hãy để cây tự do, không o ép hối thúc, không trói buộc... cứ bình yên mà lớn em nhé... em cao to lớn bé ko quan trọng miễn sao sự hiện diện của em luôn có ích cho cuộc đời 🌱🌱🌱"
     },
     {
+        id: 5,
         url: Post5,
         title: "NẮNG VÀNG TRÊN VƯỜN RAU",
         content: "Nắng vàng, đất đỏ và rau xanh ngọt lành.🍀🍀🍀"
