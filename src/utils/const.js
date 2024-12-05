@@ -79,6 +79,7 @@ export const Menus = [
 
 export const SanPhams = [
     {
+        id: 1,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -86,6 +87,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 2,
         name: "Thịt gà",
         price: 125000,
         id_title: 3,
@@ -93,6 +95,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 3,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -100,6 +103,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -107,6 +111,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -114,6 +119,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -121,6 +127,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -128,6 +135,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -135,6 +143,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -142,6 +151,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -149,6 +159,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt bò",
         price: 125000,
         id_title: 3,
@@ -156,6 +167,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Thịt gà",
         price: 75000,
         id_title: 3,
@@ -163,6 +175,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 4,
         name: "Chuối xanh",
         price: 30000,
         id_title: 2,
@@ -170,6 +183,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 4,
         name: "Mận an phước",
         price: 22000,
         id_title: 2,
@@ -177,6 +191,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Táo xanh",
         price: 80000,
         id_title: 2,
@@ -184,6 +199,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 4,
         name: "Cam",
         price: 85000,
         id_title: 2,
@@ -191,6 +207,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -198,6 +215,7 @@ export const SanPhams = [
         isHot: true
     },
     {
+        id: 4,
         name: "Khoai tây",
         price: 23000,
         id_title: 1,
@@ -205,6 +223,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cà rốt",
         price: 23000,
         id_title: 1,
@@ -212,6 +231,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -219,6 +239,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -226,6 +247,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -233,6 +255,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -240,6 +263,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -247,6 +271,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Cải ngọt",
         price: 23000,
         id_title: 1,
@@ -254,6 +279,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -261,6 +287,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -268,6 +295,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -275,6 +303,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -282,6 +311,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -289,6 +319,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -296,6 +327,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -303,6 +335,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,
@@ -310,6 +343,7 @@ export const SanPhams = [
         isHot: false
     },
     {
+        id: 4,
         name: "Nho tím",
         price: 85000,
         id_title: 2,

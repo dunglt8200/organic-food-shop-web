@@ -38,7 +38,7 @@ function CategoryProduct({list_sanpham, id_category, name}) {
             </div>
             <div className="div-main-category-store">
                 {products.map((item_sp, key_sp) => (
-                            <Product url={item_sp.url} name={item_sp.name} price={item_sp.price}></Product>
+                            <Product {...item_sp}></Product>
                         ))}     
             </div>
             {isShowButtonXemThem && <button className="btn-xem-them" onClick={handleSplit}>Xem thêm</button>}         

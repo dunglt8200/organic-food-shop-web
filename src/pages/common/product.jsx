@@ -2,6 +2,8 @@ import React from "react";
 import {convertIntToVND} from "../../utils/util";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import MyModal from "../common/modalAddToCart";
+import { Link } from "react-router-dom";
+import { ROUTERS } from "../../utils/router";
 
 function Product(prop) {
     const [isOpen, setOpenModel] = React.useState(false)
@@ -15,7 +17,9 @@ function Product(prop) {
     return (
         <div className="div-product">
             <div className="div-img-icon">
-                <img className="img-product" src={prop.url} alt="img"/>
+                <Link to={`/${ROUTERS.USER.CUAHANG}/${prop.id}`}>
+                    <img className="img-product" src={prop.url} alt="img"/>
+                </Link>         
                 <div className="div-eye-cart" onClick={openModal} >
                     <div className="div-icon"><LiaShoppingBagSolid /></div>
                     <span style={{ fontSize: 16 }}>Thêm vào giỏ hàng</span>                    

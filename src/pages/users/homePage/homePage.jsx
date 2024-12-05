@@ -67,7 +67,7 @@ function HomePage() {
                             {                           
                                 SanPhams.map((product, product_key)=> (
                                     (title2.id === product.id_title && product.isHot === true) && (
-                                        <Product key={product_key} url={product.url} name={product.name} price={product.price}></Product>
+                                        <Product {...product}></Product>
                                     )
                             ))}
                         </TabPanel>

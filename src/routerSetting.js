@@ -7,6 +7,7 @@ import Store from "./pages/users/store/store";
 import Post from "./pages/users/post/post";
 import Contact from "./pages/users/contact/contact";
 import DetailPost from "./pages/common/detailPost";
+import DetailProduct from "./pages/common/detailProduct";
 
 const renderCompoent = () => {
     const routerPages = [
@@ -17,6 +18,10 @@ const renderCompoent = () => {
        {
         path: ROUTERS.USER.CUAHANG,
         compoent: <Store></Store>,
+       },
+       {
+        path: `${ROUTERS.USER.CUAHANG}/:id`,
+        compoent: <DetailProduct></DetailProduct>,
        },
        {
         path: ROUTERS.USER.BAIVIET,

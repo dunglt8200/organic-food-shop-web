@@ -38,7 +38,7 @@ function Store() {
             <div className="main-product">
                 <div className="div-list-product">
                     {currentSanPhams.filter(item => item.id_title === activeIndex).map((sp_item) => (
-                        <Product url={sp_item.url} name={sp_item.name} price={sp_item.price}></Product>
+                        <Product {...sp_item}></Product>
                     ))}                                  
                 </div>
                 <div className="pagination-controls">
