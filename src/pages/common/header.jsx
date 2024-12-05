@@ -27,12 +27,15 @@ function Header() {
             [`/${ROUTERS.USER.HOME}`]: 0,
             [`/${ROUTERS.USER.CUAHANG}`]: 1,
             [`/${ROUTERS.USER.BAIVIET}`]: 2,
-            [`/${ROUTERS.USER.LIENHE}`]: 3
+            [`/${ROUTERS.USER.LIENHE}`]: 3,
         };
 
         const currentPath = location.pathname;
         if (pathToIndex[currentPath] !== undefined) {
             handleMenuClick(pathToIndex[currentPath]);
+        } else if (currentPath.startsWith(`/${ROUTERS.USER.BAIVIET}/`)) {
+            // Handle dynamic routes like /bai-viet/:id
+            handleMenuClick(2);
         }
     }, [location]);
 
