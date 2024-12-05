@@ -8,7 +8,6 @@ import { CiClock2 } from "react-icons/ci";
 function DetailPost() {
     const navigate = useNavigate();
     const { id } = useParams();
-    console.log("Posts", Posts)
     let post = Posts.find(item => item.id.toString() === id);
     function handleReturn() {
         navigate(-1)
