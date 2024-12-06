@@ -14,6 +14,8 @@ import { PiMagnifyingGlass } from "react-icons/pi";
 import SlideImg from "../common/slideImg";
 import { useLocation } from 'react-router-dom';
 import { ROUTERS } from '../../utils/router';
+import { useSelector } from 'react-redux';
+import ModalAddToCart from "../common/modalAddToCart";
 
 function Header() {
     const images = [
@@ -22,6 +24,13 @@ function Header() {
         'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     ]
     const location = useLocation();
+    const [isOpen, setOpenModel] = React.useState(false)
+    function openModal() {
+        setOpenModel(true)
+    }
+    function closeModal() {
+        setOpenModel(false)
+    }
     useEffect(() => {
         const pathToIndex = {
             [`/${ROUTERS.USER.HOME}`]: 0,
@@ -116,14 +125,15 @@ function Header() {
                 <div className="header-bottom-item justify-content-right">
                     <ul className="ul-header-item">
                         <li className="li-header-item">
-                        <BsCart style={
+                        <BsCart onClick={openModal} style={
                             {
                                 color: "white",
                                 width: 70,
                                 height: 40
                             }
                             }/>
-                            <div className="div-count-cart">0</div>
+                            <div className="div-count-cart">{useSelector(state => state.cart.items).length}</div>
+                            {isOpen && <ModalAddToCart isOpen={isOpen} onRequestClose={closeModal}></ModalAddToCart>}
                         </li>
                     </ul>
                 </div>

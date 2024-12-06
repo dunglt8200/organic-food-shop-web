@@ -360,6 +360,8 @@
     position: absolute;
     top: -8px;
     left: 45px;
+    color: var(--color-orange);
+    font-weight: bold;
 }
 
 .slide-banner {
@@ -700,4 +702,10 @@
     gap: 5%;
     width: 100%;
     justify-content: center;
+}
+
+.div-table-scroll {
+   height: 50vh;
+   overflow-y: scroll;
+   overflow: auto;
 }

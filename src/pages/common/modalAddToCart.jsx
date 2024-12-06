@@ -4,8 +4,20 @@ import { MdDownloadDone } from "react-icons/md";
 import DataTable from 'react-data-table-component';
 import { CustomStyleTables } from "../../utils/const";
 import {convertIntToVND} from "../../utils/util";
+import { useSelector, useDispatch } from 'react-redux';
+import { removeFromCart } from "../../redux/cartSlice";
 
-function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
+function ModalAddToCart({ isOpen, onRequestClose }) {
+
+    const dispatch = useDispatch();
+    const handleRemove = (id) => {
+        dispatch(removeFromCart(id));
+      };
+    
+    //   const handleUpdateQuantity = (id, quantity) => {
+    //     dispatch(updateQuantity({ id, quantity }));
+    //   };
+
     const customStyles = {
         overlay: {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -32,7 +44,7 @@ function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
                     <img style={{width: "40%", height: "40%"}} src={row.url} alt="" />
                     <div className="div-name-add-to-cart">
                         <span>{row.name}</span>
-                        <button className="btn-del-add-to-cart">Xóa</button>
+                        <button className="btn-del-add-to-cart" onClick={() => handleRemove(row.id)}>Xóa</button>
                     </div>      
                 </div>
             ),
@@ -40,7 +52,7 @@ function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
         },
         {
             name: 'Số lượng',
-            selector: row => soLuong,
+            selector: row => row.soLuong,
              width: '20%'
         },
         {
@@ -56,20 +68,15 @@ function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
             name: 'Thành tiền',
             selector: row =>(
                 <span style={{color: "#fe9614", fontWeight: "bold", fontSize: 16}}>
-                    {convertIntToVND(row.price * soLuong)}
+                    {convertIntToVND(row.price * row.soLuong)}
                 </span> 
             ),
              width: '20%'
         },
     ];
-    const data = [
-        {
-          name: prop.name,
-          price: prop.price,
-          url: prop.url
-        }
-   ]
-   const totalPrice = data.reduce((sum, item) => sum + item.price, 0);
+    const data = useSelector(state => state.cart.items);
+    const totalPrice = data.reduce((sum, item) => sum + (item.price * item.soLuong), 0);
+    
     return (
         <Modal isOpen = {isOpen} onRequestClose = {onRequestClose} style={customStyles}>
             <div className="modal-add-to-cart-title">
@@ -79,8 +86,8 @@ function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
                     <button className="btn-x" onClick={onRequestClose}>X</button>
                 </div>
             <div className="modal-add-to-cart-main">
-                <span style={{ fontSize: 18, color: "#333333", paddingTop: 10 }}>Giỏ hàng của bạn hiện có 1 sản phẩm</span>
-                <div>
+                <span style={{ fontSize: 18, color: "#333333", paddingTop: 10 }}>Giỏ hàng của bạn hiện có {data.length} sản phẩm</span>
+                <div className="div-table-scroll">
                     <DataTable
                         columns={columns}
                         data={data}

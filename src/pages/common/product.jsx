@@ -4,6 +4,8 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import MyModal from "../common/modalAddToCart";
 import { Link } from "react-router-dom";
 import { ROUTERS } from "../../utils/router";
+import { useDispatch } from 'react-redux';
+import { addToCart } from "../../redux/cartSlice";
 
 function Product(prop) {
     const [isOpen, setOpenModel] = React.useState(false)
@@ -13,6 +15,19 @@ function Product(prop) {
     function closeModal() {
         setOpenModel(false)
     }
+    const dispatch = useDispatch();
+
+    const handleAddToCart = () => {
+        debugger
+        const product = {
+            id: prop.id,
+            name: prop.name,
+            url: prop.url,
+            price: prop.price,
+            soLuong: 1
+        }
+        dispatch(addToCart(product));
+    };
 
     return (
         <div className="div-product">
@@ -22,7 +37,7 @@ function Product(prop) {
                 </Link>         
                 <div className="div-eye-cart" onClick={openModal} >
                     <div className="div-icon"><LiaShoppingBagSolid /></div>
-                    <span style={{ fontSize: 16 }}>Thêm vào giỏ hàng</span>                    
+                    <span style={{ fontSize: 16 }} onClick={handleAddToCart}>Thêm vào giỏ hàng</span>                    
                 </div>
                 {isOpen && <MyModal isOpen={isOpen} onRequestClose={closeModal} soLuong={1} {...prop} />}
             </div>

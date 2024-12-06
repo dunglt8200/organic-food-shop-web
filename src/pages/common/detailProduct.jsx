@@ -6,6 +6,8 @@ import { FcShipped } from "react-icons/fc";
 import { GiSewingMachine } from "react-icons/gi";
 import Product from "../common/product";
 import ModalAddProductCart from "../common/modalAddToCart";
+import { useDispatch } from 'react-redux';
+import { addToCart } from "../../redux/cartSlice";
 
 function DetailProduct () {
     const { id } = useParams();
@@ -26,6 +28,22 @@ function DetailProduct () {
     }
     const handleCloseModel = () => {
         setIsOpenModalAddCart(false)
+    }
+    const dispatch = useDispatch();
+    const handleAddToCart = () => {
+        const productAddCart = {
+            id: product.id,
+            name: product.name,
+            url: product.url,
+            price: product.price,
+            soLuong: soluong
+        }
+        dispatch(addToCart(productAddCart));
+    };
+
+    const handleClickAddProduct = () => {
+        handleAddToCart()
+        handleOpenModel()
     }
 
     useEffect(() => {
@@ -74,7 +92,7 @@ function DetailProduct () {
                 </div>  
                 <div style={{display: "flex", flexDirection: "column", gap: 15}}>
                     <button className="btn-buy" style={{backgroundColor: "#1c5b41"}}>Mua ngay</button>
-                    <button className="btn-buy" style={{backgroundColor: "white", color: "#1c5b41"}} onClick={handleOpenModel}>Thêm vào giỏ hàng</button>
+                    <button className="btn-buy" style={{backgroundColor: "white", color: "#1c5b41"}} onClick={handleClickAddProduct}>Thêm vào giỏ hàng</button>
                     {isOpenModalAddCart && <ModalAddProductCart isOpen={isOpenModalAddCart} onRequestClose={handleCloseModel} soLuong={soluong} {...product}></ModalAddProductCart>}
                 </div>  
             </div>
