@@ -5,7 +5,7 @@ import DataTable from 'react-data-table-component';
 import { CustomStyleTables } from "../../utils/const";
 import {convertIntToVND} from "../../utils/util";
 
-function ModalAddToCart({ isOpen, onRequestClose, ...prop }) {
+function ModalAddToCart({ isOpen, onRequestClose, soLuong, ...prop }) {
     const customStyles = {
         overlay: {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -40,7 +40,7 @@ function ModalAddToCart({ isOpen, onRequestClose, ...prop }) {
         },
         {
             name: 'Số lượng',
-            selector: row => 1,
+            selector: row => soLuong,
              width: '20%'
         },
         {
@@ -56,7 +56,7 @@ function ModalAddToCart({ isOpen, onRequestClose, ...prop }) {
             name: 'Thành tiền',
             selector: row =>(
                 <span style={{color: "#fe9614", fontWeight: "bold", fontSize: 16}}>
-                    {convertIntToVND(row.price * 1)}
+                    {convertIntToVND(row.price * soLuong)}
                 </span> 
             ),
              width: '20%'

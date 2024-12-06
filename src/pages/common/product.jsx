@@ -24,7 +24,7 @@ function Product(prop) {
                     <div className="div-icon"><LiaShoppingBagSolid /></div>
                     <span style={{ fontSize: 16 }}>Thêm vào giỏ hàng</span>                    
                 </div>
-                {isOpen && <MyModal isOpen={isOpen} onRequestClose={closeModal} {...prop} />}
+                {isOpen && <MyModal isOpen={isOpen} onRequestClose={closeModal} soLuong={1} {...prop} />}
             </div>
             
             <div className="div-name-price-product">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { SanPhams } from "../../utils/const";
 import { convertIntToVND } from "../../utils/util";
@@ -17,9 +17,9 @@ function DetailProduct () {
         setSoLuong(soluong + 1)
     }
     const handleReduceSL = () => {
-        if(!soluong == 0) {
-            setSoLuong(soluong - 1)
-        }       
+        if (soluong !== 1) {
+            setSoLuong(soluong - 1);
+        }      
     }
     const handleOpenModel = () => {
         setIsOpenModalAddCart(true)
@@ -28,8 +28,12 @@ function DetailProduct () {
         setIsOpenModalAddCart(false)
     }
 
+    useEffect(() => {
+        setSoLuong(1);
+    }, [id]);
+
     return (
-        <div>
+        <div style={{width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 10}}>
             {/* Tiêu đề */}
             <div className="div-title-detail-product">
                <span>Chi tiết sản phẩm</span>
@@ -71,7 +75,7 @@ function DetailProduct () {
                 <div style={{display: "flex", flexDirection: "column", gap: 15}}>
                     <button className="btn-buy" style={{backgroundColor: "#1c5b41"}}>Mua ngay</button>
                     <button className="btn-buy" style={{backgroundColor: "white", color: "#1c5b41"}} onClick={handleOpenModel}>Thêm vào giỏ hàng</button>
-                    {isOpenModalAddCart && <ModalAddProductCart isOpen={isOpenModalAddCart} onRequestClose={handleCloseModel} {...product}></ModalAddProductCart>}
+                    {isOpenModalAddCart && <ModalAddProductCart isOpen={isOpenModalAddCart} onRequestClose={handleCloseModel} soLuong={soluong} {...product}></ModalAddProductCart>}
                 </div>  
             </div>
             </div>
