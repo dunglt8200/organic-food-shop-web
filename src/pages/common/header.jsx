@@ -34,8 +34,9 @@ function Header() {
         if (pathToIndex[currentPath] !== undefined) {
             handleMenuClick(pathToIndex[currentPath]);
         } else if (currentPath.startsWith(`/${ROUTERS.USER.BAIVIET}/`)) {
-            // Handle dynamic routes like /bai-viet/:id
             handleMenuClick(2);
+        } else if (currentPath.startsWith(`/${ROUTERS.USER.CUAHANG}/`)) {
+            handleMenuClick(1);
         }
     }, [location]);
 
