@@ -122,16 +122,10 @@ function Header() {
                     </ul>
                 </div>
                 {/* cart */}
-                <div className="header-bottom-item justify-content-right">
+                <div className="header-bottom-item justify-content-right reposive-ip">
                     <ul className="ul-header-item">
                         <li className="li-header-item">
-                        <BsCart onClick={openModal} style={
-                            {
-                                color: "white",
-                                width: 70,
-                                height: 40
-                            }
-                            }/>
+                        <BsCart className="reposive-cart" onClick={openModal} />
                             <div className="div-count-cart">{useSelector(state => state.cart.items).length}</div>
                             {isOpen && <ModalAddToCart isOpen={isOpen} onRequestClose={closeModal}></ModalAddToCart>}
                         </li>

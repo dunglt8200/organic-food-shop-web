@@ -22,7 +22,7 @@ function HomePage() {
                 <div className="div-slide">
                     <div className="line"></div>
                     <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
-                    <div>
+                    <div className="reposive-swiper">
                         <Swiper
                             modules={[FreeMode]}
                             freeMode={true}

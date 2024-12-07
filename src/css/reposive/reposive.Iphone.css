@@ -1,12 +1,28 @@
 @media only screen and (min-device-width: 374px) and (max-device-width: 767px) {
+    .div-master-layout {
+        width: auto;
+        height: auto;
+    }
+    
+    .ul-header-item {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-bottom-item-center {
+        width: 100%;
+    }
+
     .header-top {
         flex-direction: column;
-        height: fit-content;
+        height: 40px;
     }
 
     .header-item {
         width: 100%;
         font-size: small;
+        height: 15px;
     }
 
     .justify-content-right {
@@ -22,6 +38,7 @@
         padding-top: 20px;
         justify-content: center;
         align-items: center;
+        height: 100px;
     }
 
     .header-bottom-item {
@@ -35,10 +52,15 @@
 
     .ul-header-item-menu {
         font-size: small;
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
+
     .link-menu {
-        width: 80px;
+        width: fit-content;
+        font-size: 12px;
     }
 
     .li-header-item {
@@ -48,7 +70,6 @@
 
     .header-menu-banner {
         flex-direction: column;
-        padding-top: 20px;
     }
 
     .header-menu {
@@ -56,7 +77,12 @@
     }
 
     .header-search {
-        gap: 10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
     }
 
     .header-banner {
@@ -65,10 +91,16 @@
 
     .input-search {
         font-size: small;
+        border: none;
+        width: 100%;
     }
 
     .div-phone {
         gap: 10px;
+        border: none;
+        height: 40px;
+        width: 100%;
+        position: relative;
     }
 
     .div-hotro {
@@ -77,6 +109,8 @@
 
     .btn-search {
         font-size: small;
+        border-radius: 0;
+        width: 15%;
     }
 
     .main {
@@ -137,8 +171,8 @@
     }
 
     .div-sp-item {
-        width: 50%;
-        height: 150px;
+        width: 70%;
+        height: 140px;
     }
 
     .li-footer-item {
@@ -185,6 +219,53 @@
     }
 
     .div-map {
+        width: 100%;
+    }
+
+    .reposive-ip {
+        position: absolute;
+        width: 10px;
+        height: fit-content;
+        right: 30px;
+        top: 202px;
+    }
+
+    .div-search {
+        width: 100%;
+        border: 0.5px solid #9f9b8f;
+    }
+
+    .reposive-cart {
+        color: #045541d5;
+        width: 60px;
+        height: 40px;
+    }
+
+    .div-slide-banner {
+        height: 200px;
+    }
+
+    .reposive-swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+
+    .swiper-slide {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 150px;
+    }
+
+    .btn-read-all {
+        width: 30%;
+        height: 30px;
+        font-size: small;
+    }
+
+    .div-sp-hot-main {
         width: 100%;
     }
 }
