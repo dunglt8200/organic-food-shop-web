@@ -709,3 +709,9 @@
    overflow-y: scroll;
    overflow: auto;
 }
+
+.div-empty-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

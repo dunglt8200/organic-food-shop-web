@@ -92,6 +92,11 @@ function ModalAddToCart({ isOpen, onRequestClose }) {
                         columns={columns}
                         data={data}
                         customStyles={CustomStyleTables}
+                        noDataComponent={
+                            <div className='div-empty-data'>                                
+                                <span>Không có sản phẩm nào trong giỏ hàng của bạn</span>
+                            </div>
+                        }
                     />
                 </div>
                 <div className="div-money">
