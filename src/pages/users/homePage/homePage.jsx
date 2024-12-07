@@ -21,7 +21,7 @@ function HomePage() {
             <div className="div-slide-main">
                 <div className="div-slide">
                     <div className="line"></div>
-                    <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM HOT</span>
+                    <span className="span-category-homepage">SẢN PHẨM HOT</span>
                     <div className="reposive-swiper">
                         <Swiper
                             modules={[FreeMode]}
@@ -52,7 +52,7 @@ function HomePage() {
                 <div className="div-sp-hot-main">
                     <div className="title-sp-hot">
                         <div className="line"></div>
-                        <span style={{color: "#1c5b41", fontSize: 30, fontWeight: "bold"}}>SẢN PHẨM GIÁ TỐT</span>
+                        <span className="span-category-homepage">SẢN PHẨM GIÁ TỐT</span>
                     </div>
                     <div>
                     <Tabs>
@@ -86,7 +86,7 @@ function HomePage() {
             <div className="div-post">
                 <div className="div-post-title">
                     <div className="line"></div>
-                    <span style={{color: "#fff", fontSize: 30, fontWeight: "bold"}}>TIN TỨC SẢN PHẨM</span>
+                    <span className="span-category-tintuc">TIN TỨC SẢN PHẨM</span>
                 </div>          
                 <div className="post">
                     {Posts.slice(0, 3).map((post, key_post) => (

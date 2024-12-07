@@ -2,6 +2,7 @@
     .div-master-layout {
         width: auto;
         height: auto;
+        overflow: hidden;
     }
     
     .ul-header-item {
@@ -118,6 +119,7 @@
     }
     .div-slide {
         width: 100%;
+        gap: 5px;
     }
 
     .div-sp-hot {
@@ -126,6 +128,7 @@
 
     .div-product {
         width: 45%;
+        gap: 0;
     }
 
     .img-product {
@@ -144,10 +147,12 @@
 
     .post {
         flex-direction: column;
+        height: auto;
     }
 
     .div-post-item {
         width: 100%;
+        gap: 0;
     }
 
     .div-content-post {
@@ -172,7 +177,7 @@
 
     .div-sp-item {
         width: 70%;
-        height: 140px;
+        height: 80px;
     }
 
     .li-footer-item {
@@ -249,23 +254,57 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: fit-content;
     }
 
     .swiper-slide {
         justify-content: center;
         display: flex;
         align-items: center;
-        height: 150px;
+        height: fit-content;
     }
 
     .btn-read-all {
         width: 30%;
         height: 30px;
-        font-size: small;
+        font-size: smaller;
+        margin-top: 10px;
     }
 
     .div-sp-hot-main {
         width: 100%;
+    }
+
+    .sp-name-sp {
+        font-size: smaller;
+    }
+
+    .title-sp-hot {
+        gap: 5px;
+    }
+
+    .react-tabs__tab {
+        font-size: smaller;
+    }
+
+    .span-category-homepage {
+        font-size: 20px;
+    }
+
+    .span-category-tintuc {
+        font-size: 20px;
+    }
+
+    .div-img-post-item {
+        height: 100%;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .span-content-tintuc-homepage {
+        
     }
 }
