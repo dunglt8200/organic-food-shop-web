@@ -190,11 +190,12 @@
 
     .post-main {
         flex-direction: column;
-        padding: 10px;
+        width: 100%;
     }
 
     .div-hot-post {
-        display: none;
+        display: flex;
+        width: 100%;
     }
 
     .div-post-main {
@@ -304,7 +305,99 @@
         gap: 0;
     }
 
-    .span-content-tintuc-homepage {
-        
+    .main-store {
+        flex-direction: column;
+        justify-content: start;
+        height: 600px;
+    }
+
+    .category-menu {
+        width: 100%;
+        gap: 0;
+    }
+
+    .ul-menu-category {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .main-product {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .div-list-product {
+        grid-template-columns: auto auto auto;
+    }
+
+    .div-list-product .div-product {
+        width: 80%;
+    }
+
+    .div-list-product .img-product {
+        width: 100px;
+    }
+
+    .div-list-product .div-name-price-product span {
+        font-size: small !important;
+    }
+    
+    .ul-menu-category {
+        padding-top: 5px;
+    }
+
+    .div-post-main-list {
+        grid-template-columns: auto;
+    }
+
+    .grid-post-item .link-detail-post {
+        width: 95%;
+    }
+
+    .grid-post-item .link-detail-post img {
+        width: 350px !important;
+    }
+
+    .div-main-detail-post {
+        flex-direction: column;
+    }
+
+    .div-post-relate-to {
+        width: 100%;
+    }
+
+    .div-detail-post {
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    .input-comment {
+        width: 90%;
+    }
+
+    .btn-comment {
+        width: 25%;
+        font-size: 14px;
+    }
+
+    .btn-return {
+        width: 25%;
+    }
+
+    .div-detail-product-main {
+        flex-direction: column;
+    }
+
+    .div-img-product {
+    }
+
+    .div-info-product {
+        width: 95%;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    .div-product-same-kind {
+        width: 100%;
     }
 }
