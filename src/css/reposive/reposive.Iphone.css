@@ -386,9 +386,17 @@
 
     .div-detail-product-main {
         flex-direction: column;
+        justify-content: start;
     }
 
     .div-img-product {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-product-detail {
+        width: 100%;
+        height: 100%;
     }
 
     .div-info-product {
@@ -399,9 +407,11 @@
 
     .div-product-same-kind {
         width: 100%;
+        padding-top: 60%;
     }
 
     .div-product-same-kind-list {
-        
+        overflow: scroll;
+        justify-content: flex-start;
     }
 }

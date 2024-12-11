@@ -51,7 +51,7 @@ function DetailProduct () {
     }, [id]);
 
     return (
-        <div style={{width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 10}}>
+        <div className="main-detail-product">
             {/* Tiêu đề */}
             <div className="div-title-detail-product">
                <span>Chi tiết sản phẩm</span>
