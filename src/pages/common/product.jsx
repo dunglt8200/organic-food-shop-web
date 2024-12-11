@@ -18,7 +18,6 @@ function Product(prop) {
     const dispatch = useDispatch();
 
     const handleAddToCart = () => {
-        debugger
         const product = {
             id: prop.id,
             name: prop.name,
